@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: Microsoft YaHei, Arial, sans-serif;
+  background: #eee;
+}
+img {
+  display: block;
+  border: none;
+  width: 100%;
+}
+.highlight {
+  color: #00bdf2 !important;
+}
+.big_size {
+  font-size: 1.38rem !important;
+}
+.middle_size {
+  font-size: 1.05rem !important;
+}
+.layout {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+}
+.layout .content {
+  width: 95%;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+  padding-bottom: 1.2rem;
+}
+.layout .content .slogan {
+  font-size: 1.54rem;
+  color: #004785;
+  text-align: center;
+  padding-top: 2rem;
+  font-weight: bold;
+}
+.layout .content .title {
+  font-size: 1.38rem;
+  color: #004785;
+  text-align: center;
+  margin-top: 1.2rem;
+}
+.layout .content .inner_center {
+  width: 90%;
+  margin: 0 auto;
+}
+.layout .content .inner_center .detail {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 1rem;
+  line-height: 150%;
+}
+.layout .content .inner_center .tips {
+  color: #777;
+  font-size: 0.77rem;
+  margin-top: 1.2rem;
+  line-height: 140%;
+}
+.layout .content .inner_center .item_title {
+  font-size: 1rem;
+  color: #004785;
+  margin-top: 0.5rem;
+}
+.layout .content .inner_center .item_list {
+  margin-top: 1.3rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: box;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  box-pack: start;
+  -webkit-box-align: center ;
+  -moz-box-align: center ;
+  -ms-flex-align: center ;
+  box-align: center;
+}
+.layout .content .inner_center .item_list .item_icon {
+  width: 12.5%;
+}
+.layout .content .inner_center .item_list .item_info {
+  font-size: 1rem;
+  color: #555;
+  padding-left: 2.5%;
+  width: 85%;
+  line-height: 150%;
+}
+.layout .content .inner_center .item_list .item_info ul {
+  font-size: 0.9rem;
+  margin-left: 1.5rem;
+  margin-top: 0.3rem;
+}
+.layout .content .inner_center .item_list .item_info ul li {
+  list-style-type: square;
+  color: #004785;
+  line-height: 150%;
+}
+.layout .content .inner_center .item_list .item_info ul li span {
+  color: #555;
+}
+.layout .content .inner_center .item_list.align_top {
+  -webkit-box-align: start ;
+  -moz-box-align: start ;
+  -ms-flex-align: start ;
+  box-align: start;
+}
+.layout .content .inner_center .item_list.align_top .item_info {
+  margin-top: 1rem;
+}
+.layout .content .inner_center .slide_area {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 1.8rem;
+  margin-top: 1rem;
+}
+.layout .content .inner_center .slide_area .slide_info {
+  overflow: hidden;
+}
+.layout .content .inner_center .slide_area .slide_info .slide_item {
+  float: left;
+  list-style: none;
+}
+.layout .content .inner_center .slide_area .slide_info .slide_item .slide_icon {
+  width: 11.2%;
+  margin: 0 auto;
+}
+.layout .content .inner_center .slide_area .slide_info .slide_item .slide_txt {
+  height: 3.15rem;
+  font-size: 1rem;
+  line-height: 160%;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+.layout .content .inner_center .slide_area .slide_info .slide_item .slide_txt span {
+  color: #00bdf2;
+  font-size: 1.1rem;
+}
+.layout .content .inner_center .slide_area .slide_point {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50%;
+  z-index: 10;
+  list-style: none;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.layout .content .inner_center .slide_area .slide_point li {
+  width: 7px;
+  height: 7px;
+  border-radius: 50px;
+  float: left;
+  margin-left: 5px;
+  background: #999;
+}
+.layout .content .inner_center .slide_area .slide_point lili:nth-child(1) {
+  margin-left: 0;
+}
+.layout .content .inner_center .slide_area .arrow_img {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 2%;
+}
+.layout .content .inner_center .slide_area .arrow_img.left_arrow {
+  left: 2%;
+}
+.layout .content .inner_center .slide_area .arrow_img.right_arrow {
+  right: 2%;
+}
+.layout .content .inner_center .item_point {
+  font-size: 1.15rem;
+  color: #004785;
+  line-height: 160%;
+  padding: 1.1rem 0;
+  border-bottom: solid 1px #ccc;
+}
+.layout .content .inner_center .item_good {
+  font-size: 1.15rem;
+  color: #333;
+  margin-top: 1rem;
+}
+.layout .content .inner_center .adv_list {
+  color: #666;
+  font-size: 1rem;
+  margin-top: 0.8rem;
+  margin-left: 1.5rem;
+}
+.layout .content .inner_center .adv_list li {
+  margin-bottom: 0.3rem;
+}
+.layout .content1 {
+  margin-top: -2rem;
+}
+.layout .icon_content {
+  margin-top: 5.7rem;
+  padding-top: 3.5rem;
+}
+.layout .icon_content .section_icon {
+  width: 21.1%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.layout .icon_content .inner_center .item_point {
+  padding: 0;
+  border-bottom: none;
+  color: #000;
+}
+.layout .icon_content .inner_center .item_good {
+  color: #000;
+}
+.layout .icon_content .inner_center .adv_list a {
+  color: #004785;
+}
+.layout .sh_content {
+  margin-top: 0.77rem;
+  padding-bottom: 0;
+}
+.layout .sh_content .tab_area {
+  position: relative;
+}
+.layout .sh_content .tab_area .tab_txt {
+  width: 100%;
+  font-size: 1.84rem;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  background: url(../images/show_arrow.png) no-repeat 93% 50%;
+  background-size: 6%;
+}
+.layout .sh_content .tab_area .tab_txt.hide {
+  background-image: url(../images/hide_arrow.png);
+}
+.layout .sh_content .sh_info {
+  display: none;
+  padding-bottom: 1.2rem;
+}
+.layout .statement {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2.8rem 0;
+  font-size: 1.15rem;
+  color: #999;
+}
+.layout .statement ul {
+  font-size: 1rem;
+  line-height: 160%;
+  margin-top: 0.7rem;
+  margin-left: 1.5rem;
+}
+.layout .statement ul img {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}

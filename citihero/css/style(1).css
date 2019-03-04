@@ -1,0 +1,2080 @@
+@font-face {
+    font-family: "interstate-bold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/views/citigold/fonts/interstate_bold.eot?#iefix") format("embedded-opentype"), url("/views/citigold/fonts/interstate_bold.woff") format("woff"), url("/views/citigold/fonts/interstate_bold.ttf") format("truetype"), url("/views/citigold/fonts/interstate_bold.svg#Citibank") format("svg");
+}
+@font-face {
+    font-family: "interstate";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/views/citigold/fonts/interstaterom-webfont.eot?#iefix") format("embedded-opentype"), url("/views/citigold/fonts/interstaterom-webfont.woff") format("woff"), url("/views/citigold/fonts/interstaterom-webfont.ttf") format("truetype"), url("/views/citigold/fonts/interstaterom-webfont.svg#Citibank") format("svg");
+}
+@font-face {
+    font-family: "interstate-light";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/views/citigold/fonts/interstaterom-webfont-light.eot?#iefix") format("embedded-opentype"), url("/views/citigold/fonts/interstaterom-webfont-light.woff") format("woff"), url("/views/citigold/fonts/interstaterom-webfont-light.sitx") format("truetype"), url("/views/citigold/fonts/interstate_extralight.svg#Citibank") format("svg");
+}
+@font-face {
+    font-family: "interstate-extralight";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/views/citigold/fonts/interstate_extralight.eot?#iefix") format("embedded-opentype"), url("/views/citigold/fonts/interstate_extralight.woff") format("woff"), url("/views/citigold/fonts/interstate_extralight.sitx") format("truetype"), url("/views/citigold/fonts/interstate_extralight.svg#Citibank") format("svg");
+}
+@font-face {
+    font-family: 'ddl-interstate-exlight';
+    src: url('/views/citigold/ddlfonts/Interstate_exLight.eot');
+    src: local('☺'), url('/views/citigold/ddlfonts/Interstate_exLight.eot?#iefix') format('embedded-opentype'), url('/views/citigold/ddlfonts/Interstate_exLight.woff') format('woff'), url('/views/citigold/ddlfonts/Interstate_exLight.ttf') format('truetype'), url('/views/citigold/ddlfonts/Interstate_exLight.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ddl-interstate-light';
+    src: url('/views/citigold/ddlfonts/Interstate-Light.eot');
+    src: local('☺'), url('/views/citigold/ddlfonts/Interstate-Light.eot?#iefix') format('embedded-opentype'), url('/views/citigold/ddlfonts/Interstate-Light.woff') format('woff'), url('/views/citigold/ddlfonts/Interstate-Light.ttf') format('truetype'), url('/views/citigold/ddlfonts/Interstate-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ddl-interstate-regular';
+    src: url('/views/citigold/ddlfonts/Interstate-Regular.eot');
+    src: local('☺'), url('/views/citigold/ddlfonts/Interstate-Regular.eot?#iefix') format('embedded-opentype'), url('/views/citigold/ddlfonts/Interstate-Regular.woff') format('woff'), url('/views/citigold/ddlfonts/Interstate-Regular.ttf') format('truetype'), url('/views/citigold/ddlfonts/Interstate-Regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ddl-interstate-bold';
+    src: url('/views/citigold/ddlfonts/Interstate-Bold.eot');
+    src: local('☺'), url('/views/citigold/ddlfonts/Interstate-Bold.eot?#iefix') format('embedded-opentype'), url('/views/citigold/ddlfonts/Interstate-Bold.woff') format('woff'), url('/views/citigold/ddlfonts/Interstate-Bold.ttf') format('truetype'), url('/views/citigold/ddlfonts/Interstate-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    font-family: interstate-light, arial;font-size: 16px;line-height: 24px;color: #333333;margin: 0;background: #ffffff;letter-spacing: 0px;
+}
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,ins,kbd,q,samp,small,strong,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video,img {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary,a {display: block;margin: 0px;padding: 0px;}
+a {text-decoration: none;color: #B4975A;outline: 0px;display: inline-block;}
+h1,h2,h3,h4,h5,h6 {font-weight: normal;}
+img {line-height: 0px;max-width: 100%;}
+ul {list-style: none;}
+textarea {resize: none;-webkit-appearance: none;}
+input[type=email] {-webkit-appearance: none;}
+input {outline: 0px;}
+input {outline: 0px;}
+input[type=radio],input[type=checkbox] {opacity: 0;}
+li {float: left;}
+.citiGold {color: #B4975A !important;}
+.citiBlue {color: 0f2a48;}
+.gs-result .gs-title, .gs-result .gs-title *{color: #998459 !important;}
+.gsc-result .gs-title {height: 1.3em !important;}
+.gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl {color: #998459 !important;}
+.display-caption{display:table-caption !important;}
+.padding10{padding-bottom:10px;}
+.padding20{padding-bottom:20px;}
+.padding30{padding-bottom:30px;}
+.padding40{padding-bottom:40px;}
+.marginBottom40{margin-bottom:40px;}
+.imgAlter  .rgtTxt.rgtTxtTab{padding-left: 60px;}
+#pageWrappper {visibility: hidden;}
+.container {width: 1480px;padding-right: 20px;padding-left: 20px;margin-right: auto;margin-left: auto;}
+.innerContainer {margin: 0px auto;float: none !important;}
+.row {margin-right: -10px;margin-left: -10px;}
+.col12,.col11,.col10,.col9,.col8,.col7,.col6,.col5,.col4,.col3,.col2,.col1,.col-sm-12,.col-sm-11,.col-sm-10,.col-sm-9,.col-sm-8,.col-sm-7,.col-sm-6,.col-sm-5,.col-sm-4,.col-sm-3,.col-sm-2,.col-sm-1,.col-md-12,.col-md-11,.col-md-10,.col-md-12,.col-md-11,.col-md-10,.col-md-9,.col-md-8,.col-md-7,.col-md-6,.col-md-5,.col-md-4,.col-md-3,.col-md-2,.col-md-1,.col2by5,.col-md-1by8,.col1by8 {
+    position: relative;
+    padding: 0 10px;
+    float: left;
+}
+.rowcenter *[class^="col"],
+.rowcenter *[class^="col-"] {
+    float: none;
+    display: inline-block;
+}
+.rowtable *[class^="col"],
+.rowtable *[class^="col-"] {
+    float: none;
+    display: inline-table;
+}
+.rowleft *[class^="col"],
+.rowleft *[class^="col-"] {
+    float: left;
+    display: inline;
+}
+.row:after,
+.row:before,
+.container {
+    display: table;
+    content: "";
+}
+.container-noTab {
+    display: inline-block;
+    content: "";
+}
+.row:after {
+    clear: both;
+}
+
+@media(min-width: 768px) {
+    .col-md-12 {width: 100%;}
+    .col-md-11 {width: 91.0909%;}
+    .col-md-10 {width: 83.33333333%;}
+    .col-md-9 {width: 75%;}
+    .col-md-8 {width: 66.66666667%;}
+    .col-md-7 {width: 58.33333333%;}
+    .col-md-6 {width: 50%;}
+    .col-md-5 {width: 41.66666667%;}
+    .col-md-4 {width: 33.33333333%;}
+    .col-md-3 {width: 25%;}
+    .col-md-2 {width: 16.66666667%;}
+    .col-md-1 {width: 8.33333333%;}
+    .col2by5 {width: 19.5%;}
+	.col-md-1by8{width:13%;}
+    .visibleDesktop, .visibleTablet {display: block;}
+    .visibleMobile,.visibleXSM {display: none !important;}
+    .visibleSM {display: none !important;}
+    .visible320 {display: none !important;}
+    .col-md-pull-12 {right: 100%;}
+    .col-md-pull-11 {right: 91.66666667%;}
+    .col-md-pull-10 {right: 83.33333333%;}
+    .col-md-pull-9 {right: 75%;}
+    .col-md-pull-8 {right: 66.66666667%;}
+    .col-md-pull-7 {right: 58.33333333%;}
+    .col-md-pull-6 {right: 50%;}
+    .col-md-pull-5 {right: 41.66666667%;}
+    .col-md-pull-4 {right: 33.33333333%;}
+    .col-md-pull-3 {right: 25%;}
+    .col-md-pull-2 {right: 16.66666667%;}
+    .col-md-pull-1 {right: 8.33333333%;}
+    .col-md-pull-0 {right: auto;}
+    .col-md-push-12 {left: 100%;}
+    .col-md-push-11 {left: 91.66666667%;}
+    .col-md-push-10 {left: 83.33333333%;}
+    .col-md-push-9 {left: 75%;}
+    .col-md-push-8 {left: 66.66666667%;}
+    .col-md-push-7 {left: 58.33333333%;}
+    .col-md-push-6 {left: 50%;}
+    .col-md-push-5 {left: 41.66666667%;}
+    .col-md-push-4 {left: 33.33333333%;}
+    .col-md-push-3 {left: 25%;}
+    .col-md-push-2 {left: 16.66666667%;}
+    .col-md-push-1 {left: 8.33333333%;}
+    .col-md-push-0 {left: auto;}
+    .col-md-offset-12 {margin-left: 100%;}
+    .col-md-offset-11 {margin-left: 91.66666667%;}
+    .col-md-offset-10 {margin-left: 83.33333333%;}
+    .col-md-offset-9 {margin-left: 75%;}
+    .col-md-offset-8 {margin-left: 66.66666667%;}
+    .col-md-offset-7 {margin-left: 58.33333333%;}
+    .col-md-offset-6 {margin-left: 50%;}
+    .col-md-offset-5 {margin-left: 41.66666667%;}
+    .col-md-offset-4 {margin-left: 33.33333333%;}
+    .col-md-offset-3 {margin-left: 25%;}
+    .col-md-offset-2 {margin-left: 16.66666667%;}
+    .col-md-offset-1 {margin-left: 8.33333333%;}
+    .col-md-offset-0 {margin-left: 0;}
+	
+    h1.mainHeading {font-size: 40px;line-height: 48px;letter-spacing: 0px;}
+    h2.mainHeading {font-size: 40px;line-height: 48px;letter-spacing: 0px;}
+    h3.subHeading {font-size: 24px;line-height: 30px;letter-spacing: 0px;}
+	h4.pagetitle {font-size: 14px;letter-spacing: 2px;line-height: 20px;color: #333333;}
+    h5.sub-title {font-size: 12px;line-height: 16px;letter-spacing: 1px;}
+    h1.pagetitle {font-size: 55px;line-height: 55px;letter-spacing: 0px;}
+	.margin-alter.rowSection {margin-top: 65px;}
+}
+
+
+@media(min-width: 992px) {
+    .col12 {width: 100%;}
+    .col11 {width: 91.0909%;}
+    .col10 {width: 83.33333333%;}
+    .col9 {width: 75%;}
+    .col8 {width: 66.66666667%;}
+    .col7 {width: 58.33333333%;}
+    .col6 {width: 50%;}
+    .col5 {width: 41.66666667%;}
+    .col4 {width: 33.33333333%;}
+    .col4by3 {width: 30%;}
+    .col3 {width: 25%;}
+    .col2 {width: 16.66666667%;}
+    .col1 {width: 8.33333333%;}
+	.col1by8{width:13%;}
+    .col2by5 {width:24.22%;}
+    .visibleDesktop, .visibleTablet, .mobileTabHidden {display: block;}
+    .visibleMobile,.visibleXSM {display: none !important;}
+    .visibleSM {display: none !important;}
+    .visible320 {display: none !important;}
+    .col-pull-12 {right: 100%;}
+    .col-pull-11 {right: 91.66666667%;}
+    .col-pull-10 {right: 83.33333333%;}
+    .col-pull-9 {right: 75%;}
+    .col-pull-8 {right: 66.66666667%;}
+    .col-pull-7 {right: 58.33333333%;}
+    .col-pull-6 {right: 50%;}
+    .col-pull-5 {right: 41.66666667%;}
+    .col-pull-4 {right: 33.33333333%;}
+    .col-pull-3 {right: 25%;}
+    .col-pull-2 {right: 16.66666667%;}
+    .col-pull-1 {right: 8.33333333%;}
+    .col-pull-0 {right: auto;}
+    .col-push-12 {left: 100%;}
+    .col-push-11 {left: 91.66666667%;}
+    .col-push-10 {left: 83.33333333%;}
+    .col-push-9 {left: 75%;}
+    .col-push-8 {left: 66.66666667%;}
+    .col-push-7 {left: 58.33333333%;}
+    .col-push-6 {left: 50%;}
+    .col-push-5 {left: 41.66666667%;}
+    .col-push-4 {left: 33.33333333%;}
+    .col-push-3 {left: 25%;}
+    .col-push-2 {left: 16.66666667%;}
+    .col-push-1 {left: 8.33333333%;}
+    .col-push-0 {left: auto;}
+	.col-offset-1 {margin-left: 8.33333333%;}
+    .leftNavBarSection {display: block;}
+	
+	h1.mainHeading {font-size: 42px;line-height: 50px;letter-spacing: 0px;}
+    h2.mainHeading {font-size: 42px;line-height: 50px;letter-spacing: 0px;}
+    h3.subHeading {font-size: 26px;line-height: 32px;letter-spacing: 0px;}
+	h4.pagetitle {font-size: 16px;letter-spacing: 2px;line-height: 24px;color: #333333;margin-bottom: 8px;}
+	.homebanner_cta h1.mainHeading {font-size: 36px; line-height: 40px;}
+    h5.sub-title {font-size: 12px;line-height: 16px;letter-spacing: 1px;}
+    h1.pagetitle {font-size: 68px;line-height: 76px;letter-spacing: 0px;}
+}
+
+@media(max-width: 767px) {
+    .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col2by5 {position: relative;padding: 0 10px;float: left;}
+    .col-sm-12 {width: 100%;}
+    .col-sm-11 {width: 91.0909%;}
+    .col-sm-10 {width: 83.33333333%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-8 {width: 66.66666667%;}
+    .col-sm-7 {width: 58.33333333%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-5 {width: 41.66666667%;}
+    .col-sm-4 {width: 33.33333333%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-2 {width: 16.66666667%;}
+    .col-sm-1 {width: 8.33333333%;}
+    .chatlist {padding-bottom: 20px;}
+    .visibleDesktop, .visibleTablet, .mobileTabHidden,.visibleXSM {display: none !important;}
+    .visibleSM {display: none !important;}
+    .visible320 {display: none !important;}
+    .visibleMobile {display: inline-block !important;}
+    .col-sm-pull-12 {right: 100%;}
+    .col-sm-pull-11 {right: 91.66666667%;}
+    .col-sm-pull-10 {right: 83.33333333%;}
+    .col-sm-pull-9 {right: 75%;}
+    .col-sm-pull-8 {right: 66.66666667%;}
+    .col-sm-pull-7 {right: 58.33333333%;}
+    .col-sm-pull-6 {right: 50%;}
+    .col-sm-pull-5 {right: 41.66666667%;}
+    .col-sm-pull-4 {right: 33.33333333%;}
+    .col-sm-pull-3 {right: 25%;}
+    .col-sm-pull-2 {right: 16.66666667%;}
+    .col-sm-pull-1 {right: 8.33333333%;}
+    .col-sm-pull-0 {right: auto;}
+    .col-sm-push-12 {left: 100%;}
+    .col-sm-push-11 {left: 91.66666667%;}
+    .col-sm-push-10 {left: 83.33333333%;}
+    .col-sm-push-9 {left: 75%;}
+    .col-sm-push-8 {left: 66.66666667%;}
+    .col-sm-push-7 {left: 58.33333333%;}
+    .col-sm-push-6 {left: 50%;}
+    .col-sm-push-5 {left: 41.66666667%;}
+    .col-sm-push-4 {left: 33.33333333%;}
+    .col-sm-push-3 {left: 25%;}
+    .col-sm-push-2 {left: 16.66666667%;}
+    .col-sm-push-1 {left: 8.33333333%;}
+    .col-sm-push-0 {left: auto;}
+    .col-sm-offset-12 {margin-left: 100%;}
+    .col-sm-offset-11 {margin-left: 91.66666667%;}
+    .col-sm-offset-10 {margin-left: 83.33333333%;}
+    .col-sm-offset-9 {margin-left: 75%;}
+    .col-sm-offset-8 {margin-left: 66.66666667%;}
+    .col-sm-offset-7 {margin-left: 58.33333333%;}
+    .col-sm-offset-6 {margin-left: 50%;}
+    .col-sm-offset-5 {margin-left: 41.66666667%;}
+    .col-sm-offset-4 {margin-left: 33.33333333%;}
+    .col-sm-offset-3 {margin-left: 25%;}
+    .col-sm-offset-2 {margin-left: 16.66666667%;}
+    .col-sm-offset-1 {margin-left: 8.33333333%;}
+    .col-sm-offset-0 {margin-left: 0;}
+	
+	h1.mainHeading {font-size: 38px;line-height: 46px;letter-spacing: 0px;}
+    h2.mainHeading {font-size: 38px;line-height: 46px;letter-spacing: 0px;}
+    h3.subHeading {font-size: 22px;line-height: 28px;letter-spacing: 0px;}
+    h4.pagetitle {font-size: 14px;letter-spacing: 2px;line-height: 16px;color: #333333;margin-bottom: 8px;}
+    h5.sub-title {font-size: 10px;line-height: 14px;letter-spacing: 1px;}
+    h1.pagetitle {font-size: 60px;line-height: 70px;letter-spacing: 0px;}
+}
+
+.fontBold {font-family: interstate-bold, arial !important;}
+.dropdown-menu .mCSB_scrollTools .mCSB_draggerRail{background-color: rgba(0,0,0,0.2) !important;}
+.dropdown-menu  .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{background-color: rgba(128,128,128,1.5) !important;}
+#pageLoader {width: 100%;height: 100%;background: url("/views/citigold/images/img-loader.gif") no-repeat scroll center center;position:absolute;}
+.draggable-container {overflow: hidden;position: absolute;}
+.draggable {width: 1000px;}
+.pull-right {float: right !important;}
+.pull-left {float: left !important;}
+.pull-leftnone {float: none !important;}
+.hide {display: none !important;}
+.vertical-top{vertical-align: top;}
+.show {display: block;}
+.invisible {visibility: hidden;}
+.visible {visibility: visible;}
+.hidden {display: none;}
+.affix {position: fixed;}
+.afstatic {position: static;}
+.afabsolute {position: absolute;}
+.dispInlineBlk {display: inline-block;}
+.visibleDesktopOnly {display: inline-block;}
+.afoverFlow {overflow: hidden;}
+.clearfix {clear: both;}
+.nopadding {padding: 0px;}
+.nobottomBorder {border-bottom: 0px !important;}
+.nomargin {margin: 0px;}
+.nopaddingRight {padding-right: 0px;}
+.nopaddingLeft {padding-left: 0px;}
+.nomarginRight {margin-right: 0px;}
+.nomarginLeft {margin-left: 0px !important;}
+.padding {padding: 0 20px;}
+.paddingRight {padding-right: 20px;}
+.paddingLeft {padding-left: 20px;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+.text-justify {text-align: justify;}
+.text-nowrap {white-space: nowrap;}
+.text-lowercase {text-transform: lowercase;}
+.text-uppercase {text-transform: uppercase;}
+.text-capitalize {text-transform: capitalize;}
+.border-right {border-right: 1px solid #A3A3A3;}
+.top{vertical-align:initial !important;}
+sup, sub {/* font-size: 12px;line-height: 14px; */}
+.visible-desktop {display: inline-block;}
+.hidden-desktop {display: none;}
+.visibleTabPhone {display: none !important;}
+a.fontIntBold, .fontIntBold {font-family: interstate-bold, arial;}
+/* strong, b {font: 400 16px/16px "interstate";} */
+.input-box::-webkit-input-placeholder {color: #333333;opacity:1;}
+.input-box::-moz-placeholder  {color: #333333;opacity:1;}
+.input-box::-moz-placeholder {color: #333333;opacity:1;}
+.input-box:-ms-input-placeholder {color: #333333;opacity:1;}
+
+/* Top Navigation Bar */
+.topMenu {background: #333333;height: 26px;}
+.topMenu li {position: relative;color: #ffffff;font-size: 12px;letter-spacing: 0px;line-height: 12px;margin: 7px 0px 0 0px;display: inline-block;font-family: interstate-light, arial;}
+.topMenu a {color: #ffffff;}
+.topMenu ul.lang-switch li {position: relative;color: #ffffff;font-size: 12px;line-height: 12px;margin: 7px 0px 0 40px;display: inline-block;font-family: interstate-light, arial;}
+.topMenu ul.lang-switch li:first-child {margin: 7px 0px 0 0px} 
+.topMenu ul.lang-switch li >a {position: relative;color: #ffffff;font-size: 12px;line-height: 12px;margin: 0 0 0 0;font-family: interstate-light, arial;} 
+
+/* Header */
+.banner {background: #AD9154;background: -webkit-linear-gradient(#B4975A, #A0864A, #78622A);background: -o-linear-gradient(#B4975A, #A0864A, #78622A);background: -moz-linear-gradient(#B4975A, #A0864A, #78622A);background: linear-gradient(#B4975A, #A0864A, #78622A);color: #ffffff;height: 70px;}
+.logoWrapper {padding: 20px 0 0;float: left;}
+.searchHeader {padding: 27px 0 0px 0;}
+.searchHeader a {color: #ffffff;line-height: 16px;}
+.sticky {background: #fff;position: fixed !important;top: 0px;width: 100%;-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);transform: translateZ(0);-webkit-transform: translateZ(0);}
+.menuBar nav {z-index: 999;position: relative;display: inline-block;height: 59px;overflow: hidden;}
+.menuBar {-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);width: 100%;display: table;position: relative;z-index: 99;height: 59px;}
+.menubar-ul > li:first-child, .footerTc> li:first-child {margin-left: 0px;padding-left: 0px;}
+.logInbtn a {text-align: right;font-family: interstate-bold, arial;}
+.menubar-ul > li:after, .logInbtn:after {content: "";position: absolute;width: 0px;height: 5px;left: 0px;right: 0px;bottom: 0px;background: #B4985B;-webkit-transition: all 220ms ease-out;-moz-transition: all 220ms ease-out;-o-transition: all 220ms ease-out;transition: all 220ms ease-out;}
+.menubar-ul > li:hover:after, .menubar-ul > li.menuBar-active:after, #signIn:hover:after, #signIn.menuBar-active:after, .activeMenu:after, .menubar-ul > li.activeMenu:after {width: 100%;}
+.activeMenu:after, .menubar-ul > li.activeMenu:after {width: 100% !important;}
+.menubar-ul > li {position: relative;display: block;padding: 18px 0px 17px 0px;}
+.logInbtn {position: relative;display: block;padding: 18px 0px 17px 0px;margin: 0px !important;cursor: pointer}
+.menubar-ul > li {margin: 0px 16px;cursor: pointer;}
+.menubar-ul > li >a, .logInbtn >a {font-size: 16px;letter-spacing: 0px;line-height: 16px;color: #333333;}
+.menuBar .mCSB_inside > .mCSB_container {margin-right: 9px !important;}
+.dropdown-menu {float: none;z-index: 1;position: absolute;border-bottom: 0px;width: 20%;top: 0px;}
+.dropdown-menu:after {transform: translateY(0%);display: block;transition-delay: 0s, 0s, 0.3s;}
+.dropdown-menu a {border: 1px solid rgba(0, 0, 0, 0.1);text-align: left;padding: 13px 20px 14px 40px;width: 100%;background: #fff;color: #333333;display: block;border-top: 0px;font-size: 16px;line-height: 24px;}
+.dropdown-menu a:first-child {border-top: 1px solid rgba(0, 0, 0, 0.1);}
+.dropdown-menu a:last-child {border-radius: 0px 0px 6px 6px;}
+.dropdown-menu:last-child {float: right !important;right: 0px;}
+.menuBar-active>a, .activeMenu>a {color: #B4975A !important;}
+.activeSubmenu {color: #B4975A !important;}
+
+/* Search Bar */
+.searchBar {-webkit-box-shadow: 0 5px 5px -4px #cccccc;-moz-box-shadow: 0 5px 5px -4px #cccccc;box-shadow: 0 5px 5px -4px #cccccc;box-shadow: 0 5px 5px -4px #cccccc;margin-bottom: 0px;margin-top: 50px;}
+.innerwrap {margin-bottom: 70px;display: inline-block;}
+.searchIcon {border: 0px;background: url("/views/citigold/images/icons/search_icon_gold.png") no-repeat scroll 10px 0px;display: inline-block;float: left;width: 40px;height: 20px;position: absolute;}
+.searchBar .search-close {font-family: interstate, arial;display: inline-block;float: right;width: 100%;margin-bottom: 20px;position: relative;}
+.searchBar .search-close a {color: #000000;position: absolute;right: 0px;top: 15px;}
+table {border-collapse: collapse;border-spacing: 0;table-layout: fixed;}
+input.searchBtn {background: none;border: none;cursor: pointer;float: right;font-size: 10px;margin: 1px 0 0;outline: none;padding: 0;width: 0px;}
+.gsc-search-box input.gsc-input {border: 0px;border-bottom: 1px solid #cccccc !important;font-family: interstate-light, arial;font-size: 16px !important;padding-bottom: 20px !important;height: auto !important;margin-left: 10px !important;padding-left: 30px !important;border-radius: 0px;}
+.gsc-search-box input, #gssSearchBox .gsc-input-box, #gssSearchBox .gsc-input-box-hover, #gssSearchBox .gsc-input-box-focus {border: 0px !important;box-shadow: none !important;height: auto !important;}
+#gssSearchBox table.gsc-search-box {width: 100% !important;}
+.searchResult .mainHeading {/* background: #ccc; */font-size: 42px;padding: 88px 10px 0px 10px;}
+.gsc-table-cell-thumbnail {width: 7% !important;}
+.gsc-tabsArea > div {overflow: initial !important;}
+.gsc-table-result, .gsc-thumbnail-inside, .gsc-url-top {padding-left: 0px !important;padding-right: 0px !important;}
+.gsc-tabsArea > .gsc-tabHeader {height: 29px !important;}
+.gsc-tabHeader.gsc-tabhInactive {height: 27px !important;}
+.searchBar .search-close a {background: url("/views/citigold/images/icons/close_navigation.png") no-repeat scroll 0px 0px;width: 17px;height: 17px;}
+.searchBar form.gsc-search-box {margin-left: 0 !important;}
+.cse .gsc-control-cse, .gsc-control-cse{padding:0 !important;}
+.searchBar {-webkit-box-shadow: 0 5px 5px -4px #cccccc;-moz-box-shadow: 0 5px 5px -4px #cccccc;box-shadow: 0 5px 5px -4px #cccccc;box-shadow: 0 5px 5px -4px #cccccc;margin-bottom: 0px;margin-top: 50px;}
+.innerwrap {margin-bottom: 70px;display: inline-block;}
+.searchIcon {border: 0px;background: url("/views/citigold/images/icons/search_icon_gold.png") no-repeat scroll 10px 0px;display: inline-block;float: left;width: 40px;height: 20px;position: absolute;margin-top:2px;}
+.searchBar .search-close {font-family: interstate, arial;display: inline-block;float: right;width: 100%;margin-bottom: 11px;position: relative;}
+.searchBar .search-close a {color: #000000;position: absolute;right: 0px;top: 15px;}
+table {border-collapse: collapse;border-spacing: 0;table-layout: fixed;}
+input.searchBtn {background: none;border: none;cursor: pointer;float: right;font-size: 10px;margin: 1px 0 0;outline: none;padding: 0;width: 0px;}
+.gsc-search-box input.gsc-input {border: 0px;border-bottom: 1px solid #cccccc !important;font-family: interstate-light, arial;font-size: 16px !important;padding-bottom: 20px !important;height: auto !important;margin-left: 10px !important;padding-left: 30px !important;padding-right: 30px !important;border-radius: 0px;}
+.gsc-search-box input, #gssSearchBox .gsc-input-box, #gssSearchBox .gsc-input-box-hover, #gssSearchBox .gsc-input-box-focus {border: 0px !important;box-shadow: none !important;height: auto !important;}
+.gsc-results-wrapper-overlay {left: 15% !important;}
+
+#gssSearchBox table.gsc-search-box {width: 100% !important;}
+.searchResult .mainHeading {/* background: #ccc; */font-size: 42px;padding: 88px 10px 0px 10px;}
+.gsc-table-cell-thumbnail {width: 7% !important;}
+.gsc-table-cell-snippet-close, .gsc-table-cell-snippet-open{width: 80% !important;}
+.gsc-tabsArea > div {overflow: initial !important;}
+.gsc-table-result, .gsc-thumbnail-inside, .gsc-url-top {padding-left: 0px !important;padding-right: 0px !important;}
+.gsc-tabsArea > .gsc-tabHeader {height: 29px !important;}
+.gsc-tabHeader.gsc-tabhInactive {height: 27px !important;}
+.searchBar .search-close a {background: url("/views/citigold/images/icons/close_navigation.png") no-repeat scroll 0px 0px;width: 17px;height: 17px;}
+.searchBar form.gsc-search-box {margin-left: 0 !important;}
+
+/* Header */
+.pageBanner {position: relative;width: 100%;margin: 0 auto;}
+.pageBanner img {float: left;width: 100%;}
+.bannerImg {position: relative;}
+.bannerTxt {position: absolute;top: 0px;width: 100%;/*height: 500px;*/}
+.HomeBanner{}
+
+/* Footer */
+.footer-logo {padding: 20px 0 34px;display: inline-block;}
+.footer-heading {font-family: interstate-bold, arial;padding-bottom: 14px;}
+.footer-heading a {padding-bottom: 14px;font-family: interstate, arial;line-height: 18px;color: #ffffff;}
+.socialIcon ul>li {padding-left: 40px;padding-top: 22px;}
+.footerInfo {margin-bottom: 11px;font-size: 16px;line-height: 22px;letter-spacing: 0px;display: inline-block;width: 100%;}
+.pagefooter {background: #333333;color: #fff;width: 100%;float: left;}
+.footer-divider {border-top: 1px solid #ffffff;opacity: 0.5;}
+.footerlist-ul > li > a {color: #fff;margin-bottom: 12px;float: left;}
+.footerlist-ul > li {width: 100%;float: left;display: inline-block;}
+.footerTc a {font-size: 12px;letter-spacing: -0.4px;line-height: 16px;color: #fff;}
+.footerTc li {margin: 0px 20px 0px 0px;}
+.footer-seperator {border-bottom: 1px solid #ffffff;opacity: 0.5;}
+.copyright > p {font-size: 12px;line-height: 18px;}
+.copyright {padding-top: 18px;padding-bottom: 41px;font-family: interstate-light, arial;}
+.footerTc {padding-top: 13px;}
+
+/* Back to Top */
+#back-top {float: left; width: 100%;margin: 0px auto;text-align: center;}
+#back-top span {background: url("/views/citigold/images/icons/carat_up_gold.png") no-repeat 10px 23px;color: #333;cursor: pointer;display: inline-block;font-size: 16px;margin-bottom: 0;padding: 14px 10px 14px 32px;transition: all 1s ease 0s;z-index: 9999;line-height: 25px;}
+
+/* Promotion Slider */
+.add-box-gold {background: #B4975A;font-size: 16px;padding: 29px 25px 29px;color: #fff;position: relative;height: 650px;}
+.add-box-gold .before {position: absolute;top: 50%;left: -1px;}
+.add-box-gold .align-box-center{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+.leftColumn.pad-lft-clm {padding: 40px 50px 40px;}
+.padding50{padding-bottom: 50px;}
+.add-fnt-20{font-size: 20px;}
+.visibleSML {display: block !important;}
+.visibleSMP {display: none !important;}
+
+/* Page title */
+.pageBanner .mainHeading {padding-bottom: 23px;}
+.pageBanner .pagetitle {padding: 57px 0 28px 0;}
+.innerBanner {width: 59.2%;margin: 0 auto;max-width: 840px;display: inline-block;background: rgba(255, 255, 255, 0.9);padding: 0 40px;}
+.HomeBanner .innerBanner{margin: 0 60px;width: 453px;padding: 0 13px;float: left;}
+.innerBanner .pagetitle {padding: 27px 0 21px 0;}
+.bannerTxt {-webkit-box-align: center;-ms-flex-align:center;-ms-grid-row-align:center;align-items: center;}
+
+/* Banner img */
+.bannerImg div {width: 100%;position: relative;display: inline-block;}
+.rgtImg div {width: 100%;}
+.rgtImgVideo div {height: 343px;width: 100%;}
+.eventsGray div {height: 394px;width: 100%;}
+.teamImg {width: 100%;display: inline-block;}
+.transformVertical1 {position: absolute;top: 50%;transform: translateY(-50%);}
+.center-row {display:table;}
+.center {display:table-cell;vertical-align:middle;float:none;}
+.xl-center-row {display:table !important;}
+.xl-center {display:inline-table !important;vertical-align:middle;float:none !important;}
+.errTxt {margin: 100px 0;}
+.errTxt>p, .errTxt>h1 {padding-bottom: 20px}
+.errTxt>p {font-size: 16px;line-height: 25px;font-family: interstate-light;}
+#indexVideoImg1 {background-repeat: no-repeat;background-position: center top;background-size: cover;background-image: url('/views/citigold/images/home/insights-video-thumb.jpg');cursor: pointer;}
+
+/* Insights */
+#insightsVideoImg1 {background-repeat: no-repeat;background-position: center top;background-size: cover;background-image: url('/views/citigold/images/insights/insights-cat1.jpg');cursor: pointer;}
+.threeColumnThumbWrap div {width: 100%;display: inline-block;margin-bottom: 10px;}
+#insightsThumbImg2 {background-repeat: no-repeat;background-position: center top;background-size: cover;background-image: url('/views/citigold/images/insights/seminar-highlights_FPO.jpg');}
+#insightsVideoImg2 {background-repeat: no-repeat;background-position: center top;background-size: cover;background-image: url('/views/citigold/images/insights/insights-horizon-video-thumb.jpg');cursor: pointer;}
+#insightsVideoImg3 {background-repeat: no-repeat;background-position: center top;background-size: cover;background-image: url('/views/citigold/images/insights/insights-opportunities-volatile-video-thumb.jpg');cursor: pointer;}
+.videoSection div {width: 100%;height: 480px;display: inline-block;}
+.horizon .videoClick {width: 100%;height: 256px;display: inline-block;}
+.promotionsThumbWrap div {width: 100%;display: inline-block;}
+.setBtmSpace {margin-bottom: 100px;}
+.privyMainImgWrap div {width: 100%;height: 550px;display: inline-block;}
+.citigoldThumbWrap div {width: 100%;height: 343px;display: inline-block;}
+
+/* Form section */
+.mandy_notfilled {border: 1px solid #D60000 !important;background: #ffffff;}
+.form-section .textAreaBox {height: 140px;font-family: interstate-light, arial;overflow: auto;}
+.inputBox-lable, .labelTxt {position: absolute;top: -17px;font-size: 12px;line-height: 12px;display: none;-webkit-transition: all 0.30s ease-in-out;-moz-transition: all 0.30s ease-in-out;-ms-transition: all 0.30s ease-in-out;-o-transition: all 0.30s ease-in-out;}
+.menuLable {display: inline-block;padding-left: 12px;}
+.pagetitle-subTxt {padding-bottom: 35px;line-height: 24px;font-size: 16px;}
+.contactUs {padding-bottom: 106px;padding-top: 106px;}
+.contactUs-label {color: #000000;font-family: interstate, arial;}
+.chatsection {border-bottom: 1px solid #666666;}
+.form-section .input-box {width: 100%;}
+.seperator {border-bottom: 1px solid #333333;opacity: 0.5;}
+#enquiry {margin: 40px 0 50px 0;}
+#enquiry .mainHeading {padding-bottom: 47px;}
+.formBox .input-box {width: 100%;}
+.form-section .inputField {margin-bottom: 20px;}
+.input-box {color: #999999;background: #F6F6F6;outline: 0px;border: 0px;border-radius: 6px;padding: 15px 20px 15px 18px;font-size: 16px;letter-spacing: 0px;color: #333333;border: 1px solid #F6F6F6;width: 100%;-webkit-appearance: none;}
+.input-box:focus {border-color: #B4975A;-webkit-transition: all 0.30s ease-in-out;-moz-transition: all 0.30s ease-in-out;-ms-transition: all 0.30s ease-in-out;-o-transition: all 0.30s ease-in-out;}
+.btnStyle {color: #ffffff;background: #000000;outline: 0px;border: 0px;border-radius: 6px;font-family: interstate-bold, arial;font-size: 100%;padding: 17px 12px;text-align: center;font-size: 16px;line-height: 16px;}
+.btnStyle:hover {background: #B4975A;}
+.submit-box {width: 100%;}
+.search-box {width: 220px;}
+.findOutBtn {width: 223px;height: 50px;line-height: 50px;padding: 0 12px;}
+.chatDiv {margin-left: 52px;margin-top: 6px;}
+.form-section .disclimer {margin-bottom: 30px;}
+#applynow-form select, #contactus-form select {padding: 14px 30px 14px 18px;background: #F6F6F6 url('/views/citigold/images/icons/carat_gold.png') calc(100% - 12px) center no-repeat ;-moz-appearance: none;-ms-appearance:none;height: 50px;}
+select {padding: 15px 30px 15px 18px;background: #F6F6F6 url(/views/citigold/images/icons/carat_gold.png) 95% center no-repeat;-moz-appearance: none; -webkit-appearance: none; appearance: none;-ms-appearance: none;outline: none;letter-spacing: 0px;color: #333333;border: 1px solid #F6F6F6;width: 100%;border-radius: 6px;font-size: 16px;max-height: 50px;}
+select::-ms-expand {display: none;}
+select:focus{border:1px solid #B4975A; }
+select.mandy_notfilled + a.selectBox {border: 1px solid #D60000 !important;}
+.radio-btn {font-size: 16px;background: url("/views/citigold/images/icons/oval.png") no-repeat 0 2px;height: 22px;}
+.radioSection {display: inline-block;padding-bottom: 20px;}
+.radio-active {background: url("/views/citigold/images/icons/radio_selected.png") no-repeat 0 2px;}
+.radioBtnerror {background: url("/views/citigold/images/icons/oval_red.png") no-repeat 0 2px;}
+.callIcon {padding-right: 12px;}
+.callLine {margin: 40px 0 35px;font-size: 21px;line-height: 27px;}
+.callLine .verticalFix {padding-top: 6px;}
+.form-toplable {padding-bottom: 26px;}
+/* #applynow-form .form-toplable {padding-bottom: 73px;} */
+.map-heading {padding-bottom: 18px;}
+.chat-line {color: #000000;}
+.form-section {padding: 33px 0 110px 0;}
+.contactUs-icon {padding-bottom: 8px;line-height: 0;}
+.radio-label {padding-left: 10px;cursor: pointer;}
+.disclimer {font-size: 10px;font-family: interstate, arial;line-height: 14px;}
+.chatsection .disclimer span {padding-bottom: 36px;display: inline-block}
+.errorCode, .errorCode2 {color: #D60000;font-size: 12px;letter-spacing: 0px;line-height: 14px;width: 100%;float: left;min-height: 21px;height: auto;text-align: left;padding-top: 7px;}
+/* #pageErr {padding-bottom: 24px;} */
+#pageErr {padding-bottom: 34px;}
+::-webkit-input-placeholder {color: #333333;}
+:-moz-placeholder {color: #333333;}
+::-moz-placeholder {color: #333333;}
+:-ms-input-placeholder {color: #333333;}
+.citigoldThumbContainer {display: inline-block;/* margin-top: 40px; */width: 100%;margin-bottom: 94px;}
+.imagePara2 img{width:100%;}
+#applynow-form .disclimer, #contactus-form .disclimer {font-size: 12px;line-height: 16px;float: left;width: 100%;margin-bottom: 0;}
+.check-btn {float: left;cursor: pointer;width: 100%;padding-bottom: 5px;}
+.check-btn input {float: left; cursor: pointer;}
+.check-btn label {float: left;padding-top: 4px;cursor: pointer;width: calc(100% - 34px);}
+.tac-content {float: left;width: 100%;padding-left: 32px;}
+.tac-content ul, .tac-content ol {float: left;width: 100%; margin: 9px 0 13px;}
+.tac-content ol {float: left;width: calc(100% - 13px); margin: 9px 0 13px 13px;}
+.tac-content ul li {background: url('/views/citigold/images/icons/bullet_small.png') no-repeat 10px 7px;padding-left: 33px;width: 100%;line-height: 18px;}
+.tac-content ol li {padding-left: 14px;width: 100%;line-height: 18px;}
+
+/* Wealth solution */
+.rightPannel .pagetitle {margin-bottom: 8px;}
+.accordiant-header * {transition: all ease 0.25s;}
+.accordiant-header div a {background: url('/views/citigold/images/icons/plus.png') no-repeat scroll 10px 7px transparent;padding: 0 0px 0 40px;color: #333333;margin-top: 13px;margin-bottom: 13px;width:100%;}
+.accordiant-content {float: left;background: #EEEEEE;border-bottom: 1px solid #EEEEEE;display: none;}
+.accordiant-header.active-state div a {font-family: interstate-bold, arial;color: #B5995C;background: url('/views/citigold/images/icons/minus.png') no-repeat scroll 10px 7px transparent;border-bottom: 0px;display: inline-block;width: 100%;}
+.accordiant-header {border-bottom: 1px solid #DDDDDD;display: table;width: 100%;cursor: pointer;}
+.accordiant-header.active-state {border-bottom: 0px solid #DDDDDD;background-color: #EEEEEE;display: table !important;}
+.grayBG {background: #EEEEEE;}
+.accordiant-content .citiGold {font-family: interstate, arial;margin-bottom: 8px;}
+.tickList {float: left;font-size: 12px;line-height: 18px;margin-left: 40px;width: calc(100% - 40px);}
+.tickList > ul > li {background: url('/views/citigold/images/icons/check.png') no-repeat scroll 0px 4px transparent;padding: 0px 0px 16px 33px;padding-bottom: 26px;width: 100%;}
+.tickList >ul > li > ul {margin-left: 13px;margin-top: 15px;}
+.tickList >ul > li > ul li {padding-left: 20px;padding-bottom: 10px;background: url(/views/citigold/images/icons/bullet-dash.jpg) no-repeat scroll 0px 9px transparent;width: 100%;}
+.tickList >ul > li > ul li:last-child {padding-bottom: 0;}
+.accordiant-header .upArrow li a {border: 0px !important;padding: 14px 0px 14px 38px;}
+.accordiant-header .upArrow li a.activeDisclaimer {padding: 14px 0px 14px 38px;}
+.accordiant-header .upArrow li a.activeDisclaimer {color: #B5995C;}
+.upArrow li a {padding: 14px 0px 14px 31px;font-size: 10px;line-height: 14px;border-top: 1px solid #999999;color: #999999;width: 100%;}
+.upArrow li a.activeDisclaimer {padding: 14px 0px 14px 31px;border-top: 1px solid #999999;color: #999999 !important;width: 100%;}
+.new_disclaimers, .termsCondtion ol.numLst li, .termsCondtion {font-size: 10px;line-height: 16px;color: #999999 !important;width: 100%;padding: 0 5px 9px 5px;}
+.disclaimerTxt {font-size: 12px;line-height: 16px;padding-top: 10px;padding-bottom: 10px;}
+.termsCondtion ol.numLst li {margin-left: 12px;}
+.termsCondtion ol {display: inline-block;width: 100%;font-size:10px;line-height: 16px;}
+.termsCondtion ol.discOrderList li {margin-left: 10px;width: calc(100% - 10px);padding-left: 7px;}
+.new_disclaimers ol.numLst li {margin-left: 14px;padding: 0 0 9px 10px;}
+.new_disclaimers ol.numLst li > ul {display: block;padding-top: 5px;}
+.new_disclaimers ol.numLst li > ul  > li {padding-left: 10px;padding-bottom: 5px;margin-left: 0;background: url(/views/citigold/images/icons/square-bullet.png) no-repeat scroll 0px 8px transparent;width: 100%;line-height: 15px;}
+.new_disclaimers ol.numLst li > ul  > li  > ul > li{padding-left: 10px;padding-bottom: 5px;margin-left: 0;background: url(/views/citigold/images/icons/bullet_small.png) no-repeat scroll 0px 6px transparent;width: 100%;line-height: 15px;}
+.new_disclaimers {display: none;padding: 0px 0px 14px 31px;}
+.new_disclaimers > p {padding-bottom: 10px;}
+.upArrow li {width: 100%;}
+.accordiant {border-top: 1px solid #EEEEEE;display: inline-block;width: 100%;}
+.acc_subTxt>p {padding-bottom: 7px;}
+.leftNav-ul li {border-bottom: 1px solid #eeeeee;width: 100%;}
+.leftNav-ul li:last-child {border-bottom: 0px;}
+.leftNav-ul li > a {padding: 18px 26px;display: block;color: #333333;box-sizing: content-box;position: relative;}
+input[type=radio] {opacity: 0;}
+.tickList ul li:last-child {padding-bottom: 35px;}
+.leftNavBarSection, .rightPannel {margin: 99px 0 0px;}
+.rightPannelInfo {background: #ffffff;padding-bottom: 90px; padding-top: 10px;}
+div#rightPannel1 {padding-top: 0;}
+/*.stickyFixed .rightPannelInfo {padding-top: 10px;} */
+.rightPannelInfo .accordiant-content .pagetitle {padding: 0px 0 2px 29px;color: #666666;}
+.rightPannelInfo .mainHeading {padding-bottom: 29px;}
+.leftNav-ul .leftNav-active {background: #EEEEEE;cursor: default;}
+.leftNav-ul .leftNav-active a {} 
+.leftNav-active .arrow {background: url('/views/citigold/images/icons/carat_grey_right.png') no-repeat;width: 14px;height: 29px;right: -14px;top: 15px;position: absolute;}
+.leftNav-ul {width: 95%;}
+.leftBarFixed {position: fixed;top: 0px;margin-top: 10px;}
+.leftBarFixed .leftNav-ul {width: 270px;}
+.acc_subTxt {padding-left: 40px;padding-bottom: 9px;}
+div.acc_subTxt {padding-bottom: 24px;}
+.disclaimerHeading {font-weight: bold;}
+.tickList .visibleDesktopOnly {display: inline;}
+.accordiant-content .acc_subTxt a.learnMore {font-family: interstate-bold, arial;margin-top: 8px;color: #B4975A;font-size: 16px;}
+.rightPannelStyle2 .leftBarFixed .leftNav-ul {width: 322px;}
+.threeColThumbDiv {margin-bottom: 20px;}
+
+/* Privileges landing */
+.imgAlter {margin-top: 100px;}
+.imgAlter.lastChild {margin-bottom: 94px;}
+.imgAlter .rgtTxt {padding-left: 90px;}
+.imgAlter .lftTxt {padding-right: 80px;}
+.imgAlter .lftImg, .imgAlter .rgtImg {line-height: 0;}
+
+/* Privileges events */
+.two-column {display: inline-block;margin-top: 100px;}
+.two-column img {width: 100%;}
+.gray-container {padding: 40px 40px 44px;}
+.gray-containerBg {background-color: #eee;}
+.gray-container h2 {font-size: 42px;letter-spacing: 0;line-height: 50px;padding-bottom: 23px;width: 100%;color: #333;}
+.gray-container h3 {color: #333;font-family: interstate, arial;font-size: 16px;letter-spacing: 0;line-height: 24px;padding-bottom: 6px;width: 100%;}
+.gray-container p {color: #333;font-size: 16px;letter-spacing: 0;line-height: 24px;padding-bottom: 23px;width: 100%;}
+.three-column-heading {margin-top: 76px;}
+.three-column-heading h1.mainHeading {padding: 0 0 38px;}
+.three-column {margin-bottom: 52px;display: inline-block;}
+.three-column img {padding-bottom: 10px;width: 100%;}
+.three-column h3 {color: #333;font-family: interstate, arial;font-size: 16px;letter-spacing: 0;line-height: 24px;margin-bottom: 6px;}
+.three-column p {color: #333;font-size: 16px;letter-spacing: 0;line-height: 24px;padding-bottom: 8px;}
+.eventImg {background: url("/views/citigold/images/privileges-events/privileges-event1.jpg") no-repeat;background-size: cover;}
+
+/* Privileges lifestyle */
+.headSection {margin-top: 85px;}
+.headSection h1 {font-size: 42px;letter-spacing: 0;line-height: 50px;padding-bottom: 26px;}
+.headSection h4 {font-size: 16px;line-height: 24px;padding-bottom: 38px;}
+.clickMore, .findMore {font-size: 16px;letter-spacing: 0;line-height: 24px;margin-bottom: 38px;font-family: interstate-bold, arial;cursor:pointer;}
+.column-detail {display: inline-block;width: 100%;}
+ol.numLst li {font-size: 16px;letter-spacing: 0;line-height: 24px;margin-left: 17px;padding: 0 0 9px 12px;width: calc(100% - 17px);}
+.tab-two-column {margin-top: 50px;}
+.tab-two-column li {background-color: #eee;cursor: pointer;font-size: 26px;height: 90px;line-height: 32px;padding: 29px 0;text-align: center;width: 50%;}
+.tab-two-column li.tab-two-column-active {background-color: #fff;border-bottom: 6px solid #b4975a;box-shadow: 0 1px 4px #ccc;height: 110px;margin-top: -10px;padding: 39px 0;cursor: default;width: 50%;}
+.tab-two-column li.tab-two-column-active a {color: #333;cursor: default;}
+.lightbox-inner {float: none !important;}
+.lightbox-content h1 {color: #333;font-size: 42px;letter-spacing: 0;line-height: 50px;}
+.lightbox-content h5 {color: #333;font-size: 16px;letter-spacing: 0;line-height: 24px;}
+.lightbox-content p {color: #333;font-size: 16px;letter-spacing: 0;line-height: 24px;padding-bottom: 8px;}
+.blackline-container {border-bottom: 1px solid #666;border-top: 1px solid #666;margin: 20px 0 4px;padding: 10px 0 9px;display: inline-block;width: 100%;}
+.blackline-container .overlayBulList {display: inline-block;}
+.blackline-container .overlayBulList li {background: url('/views/citigold/images/icons/bullet_small.png') no-repeat 0px 9px;font-size: 16px;letter-spacing: 0;line-height: 24px;margin-left: 2px;padding: 0 0 7px 26px;width: 100%;}
+.click-disclaimer li {width: 100%;}
+.click-disclaimer li a {color: #333;font-size: 10px;line-height: 16px;padding: 14px 0 14px 25px;width: 100%;position: relative;}
+.click-disclaimer li a.activeDisclaimer {color: #333;font-size: 10px;line-height: 16px;padding: 14px 0 14px 25px;width: 100%;}
+.disclaimer-content {display: none;width: 100%;padding: 0px 0px 14px 25px;}
+.disclaimer-content ol.numLst {display: inline-block;margin-bottom: 5px;}
+.disclaimer-content ol.numLst li {font-size: 10px;letter-spacing: 0;line-height: 16px;margin-left: 14px;padding: 0 5px 5px 5px;width: 100%;}
+.disclaimer-content > p {color: #333;font-size: 10px;line-height: 16px;padding: 0 0 14px;width: 100%;}
+.disclaimer-content > p.last {padding: 0;}
+.lightBoxTxt {float: none !important;margin: 0px auto;}
+.disclaimer-content ol.numLst ul.numInSolidList {display: inline-block;margin-left: 30px;}
+.disclaimer-content ol.numLst ul.numInSolidList li {background: url('/views/citigold/images/icons/bullet_small.png') no-repeat 0px 4px;font-size: 10px;letter-spacing: 0;line-height: 16px;margin-left: 0px;padding: 0 0 6px 20px;width: 100%;}
+.last {padding-bottom: 0 !important;}
+
+/* Email us */
+.emailUs {border-top: 1px solid #666666;border-bottom: 1px solid #666666;padding-bottom: 19px;margin-bottom: 100px;}
+.emailUs .subHeading {padding-top: 33px;padding-bottom: 13px;letter-spacing: 0px;}
+.emailUs .shortForm {margin-left: 20px;}
+.thankyouTxt {margin-bottom: 20px;}
+.thankyouTxt .subHeading {padding-bottom: 25px;}
+.rightPannelPara {padding-bottom: 36px;}
+.rightPannelInfo img {padding-bottom: 25px;width: 100%;}
+.greenTick {background: url("/views/citigold/images/icons/check_green.png") no-repeat 0px 7px;padding-left: 34px;margin-bottom: 34px;display: inline-block;}
+
+/* Global advantage */
+.rightPannelStyle2 .rightPannelInfo .mainHeading {padding-bottom: 23px;}
+.rightPannelStyle2 .upArrow li a {border-top: 1px solid #DDDDDD;padding: 14px 0px 14px 33px;font-size: 10px;line-height: 16px;width: 100%;color: #999999;}
+.rightPannelStyle2 .upArrow li a.activeDisclaimer {padding: 14px 0px 14px 33px;font-size: 10px;line-height: 16px;width: 100%;color: #333333;}
+.openMenu {background: url('/views/citigold/images/icons/menu.png') no-repeat scroll 0px 10px transparent;width: 14px;height: 23px;position: absolute;top: 10px;left: 20px;}
+.rightPannelStyle2 ol.numLst li {font-size: 10px;letter-spacing: 0;line-height: 16px;margin-left: 11px;padding: 0 5px 9px 5px;width: 97%;clear: both;}
+.rightPannelStyle2 ol.numLst .disc li {margin-left: 30px;}
+.rightPannelStyle2 .new_disclaimers {color: #333333;}
+.rightPannelStyle2 .rightPannelInfo {padding-bottom: 78px;}
+.rightPannel .firstChild {margin-top: 3px;display: inline-block;}
+.divider {border-bottom: 1px solid #DDDDDD;width: 100%;display: inline-block;}
+.disc {list-style: disc;}
+.disc li {width: 100%;font-size: 12px;letter-spacing: 0;line-height: 16px;margin-left: 13px;padding: 0 0 9px 3px;width: 100%;color: #999;}
+
+/* Advisory landing */
+.advisory-landing .rightPannelInfo {padding-bottom: 55px;}
+.advisory-landing #rightPannel1, .advisory-landing #rightPannel3 {padding-bottom: 40px;}
+.advisory-landing .rightPannelInfo img.firstImage {padding-bottom: 0;}
+.advisory-landing .rightPannelInfo h2.mainHeading {padding-bottom: 22px;}
+.advisory-landing .rightPannelInfo p.rightPannelPara {padding-bottom: 34px;}
+.advisory-landing .divider {margin-bottom: 27px;}
+.advisory-landing .rightPannelInfo img {padding-bottom: 37px;}
+
+/* Privileges privy */
+.ipadImg {margin-top: -130px;position: absolute;}
+.divider2 {border-bottom: 1px solid #666666;width: 100%;display: inline-block;}
+.gray-container-privy {padding: 0 40px 44px;}
+.cols-privy {margin-top: 17px;}
+
+/* Insights  page */
+.insight-headings {margin-top: 100px;}
+.insight-headings h4.subTitle {color: #333333;font-size: 16px;letter-spacing: 2px;line-height: 16px;padding-bottom: 10px;}
+.insight-headings h1.mainHeading {padding: 0 0 38px;}
+.four-column {display: inline-block;}
+.grayline-box {margin-bottom: 40px;}
+.grayline-box-heading {background-color: #b4975a;width: 100%;}
+.grayline-box-heading h4 {color: #fff;font-size: 16px;letter-spacing: 0;line-height: 24px;padding: 14px 20px;text-align: center;}
+.grayline-box-detail {border-bottom: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;display: inline-block;padding: 32px 20px 10px;width: 100%;}
+.grayline-box-detail h3 {color: #333;font-size: 24px;letter-spacing: 0;line-height: 26px;padding-bottom: 22px;}
+ul.tickLst li {background: transparent url("/views/citigold/images/icons/check_green.png") no-repeat scroll 0 7px;font-size: 16px;letter-spacing: 0;line-height: 24px;padding: 0 0 28px 26px;width: 100%;}
+.grayline-box-link {border-bottom: 1px solid #ddd;border-left: 1px solid #ddd;border-right: 1px solid #ddd;height: 52px;padding: 14px 20px;text-align: center;width: 100%;font-size: 16px;line-height: 24px;}
+.videoThumb {background: url("/views/citigold/images/insights/video.jpg") no-repeat;background-size: cover;}
+.firstVideoContainer .gray-container {padding: 90px 100px 0px 40px;}
+.videoContainer .gray-container {padding: 40px 100px 0px 90px;display: inline-table;}
+.seminar-headings {margin-top: 54px;}
+
+/* Insights - Market outlook */
+.leftPannelContent {background: #ffffff none repeat scroll 0 0;margin: -40px 0 0;padding: 40px 0px 100px 40px;}
+.leftPannelContent h4.pagetitle {font-size: 16px;letter-spacing: 2px;line-height: 24px;padding-bottom: 16px;}
+.leftPannelContent h2.mainHeading {font-size: 42px;letter-spacing: 0;line-height: 50px;padding-bottom: 40px;}
+.leftPannelContent p {font-size: 16px;line-height: 24px;padding-bottom: 25px;}
+.socialGraylineBar {border-bottom: 1px solid #ddd;border-top: 1px solid #ddd;display: inline-block;margin-bottom: 30px;padding: 13px 0;width: 100%;}
+.socialGraylineBar .authorName {float: left;font-size: 14px;letter-spacing: 2px;line-height: 22px;padding: 0;}
+.leftPannelContent h3.blackHeading {font-family: interstate-light, arial;font-size: 26px;line-height: 32px;margin-bottom: 36px;color: #333333;}
+.leftPannelContent h3.goldHeading {font-family: interstate-light, arial;font-size: 26px;line-height: 32px;margin-bottom: 30px;color: #B5995C;}
+.leftPannelContent ul.socialGoldIcon {float: right;}
+.leftPannelContent ul.socialGoldIcon > li {padding-left: 20px;padding-top: 0px;}
+.leftPannelContent .accordiant-header a {background: none;padding: 0px 0 0px 54px;color: #333333;margin-top: 29px;margin-bottom: 29px;position: relative;}
+.leftPannelContent .accordiant-content {float: left;background: #ffffff;border-bottom: 1px solid #DDDDDD;display: none;width: 100%;}
+.leftPannelContent .accordiant-header.active-state a {font-family: interstate-light, arial;color: #333333;background: none;border-bottom: 0px;background-color: #ffffff;display: inline-block;width: 100%;}
+.leftPannelContent .accordiant-header {border-bottom: 1px solid #DDDDDD;display: table;width: 100%;cursor: pointer;}
+.leftPannelContent .accordiant-header.active-state {border-bottom: 0px solid #DDDDDD;background-color: #ffffff;display: table !important;}
+.leftPannelContent .accordiant {border-top: 1px solid #DDDDDD;display: inline-block;width: 100%;}
+.accordiant-inner-content {display: inline-block;padding-bottom: 15px;padding-left: 64px;}
+.leftPannelContent .bulletList {display: inline-block;}
+.leftPannelContent .bulletList li {background: url('/views/citigold/images/icons/bullet_small.png') no-repeat 0px 9px;font-size: 16px;letter-spacing: 0;line-height: 24px;margin-left: 2px;padding: 0 0 20px 26px;width: 100%;}
+.goldBox {border: 1px solid #b39756;margin-bottom: 40px;margin-left: 32px;padding: 32px;}
+.goldBox h3.authorDesc {color: #6c6c6c;font-size: 26px;line-height: 40px;padding-bottom: 10px;}
+.goldBox p.authorName {color: #595959;font-size: 16px;line-height: 32px;padding-bottom: 0px;}
+.rightPannelContent {margin: 132px 0 0;}
+.rightPannelContent h4.pagetitle {color: #333333;font-size: 16px;letter-spacing: 2px;line-height: 24px;}
+.rightThumpContainer .column-detail {min-height: 0px;}
+.rightThumpContainer.firstChild {border: medium none;padding-top: 24px;}
+.rightThumpContainer {border-top: 1px solid #ddd;padding-top: 40px;}
+.rightThumpContainer p {color: #333333;font-size: 16px;letter-spacing: 0px;line-height: 24px;padding-bottom: 8px;}
+.rightThumpContainer .findMore {font-size: 16px;letter-spacing: 0;line-height: 24px;margin-bottom: 38px;text-align: left;}
+.rightThumpContainer img {padding: 0 0 28px;width:100%;}
+.downloadNow a {margin-bottom: 0;margin-top: 20px;text-align: left;}
+.thumpContainerVideo  div {display: inline-block;height: 160px;margin-bottom: 25px;width: 100%;}
+#thumpOutlookVideoImg {background-image: url('/views/citigold/images/insights/market-outlook-video1.jpg');background-repeat: no-repeat;background-position: center top;background-size: cover;cursor: pointer;}
+#thumpInvestVideoImg {background-image: url('/views/citigold/images/insights/market-outlook-video2.jpg');background-repeat: no-repeat;background-position: center top;background-size: cover;cursor: pointer;}
+.three-column-video .headSection {margin-top: 76px;}
+.three-column-video .three-column {display: inline-block;margin-bottom: 0px;}
+.three-column-video .three-column-video-list {margin-bottom: 86px;}
+
+/* Privileges landing */
+.landingHeading {color: #4A4A4A;padding-bottom: 22px;width: 100%;}
+.landingWrapper .pagetitle {padding: 22px 0 1px 0;}
+.first-row {margin-top: 108px;}
+.cont_bg {background: #ffffff;display: inline-block;}
+.cont_bg_shadow {-moz-box-shadow: 0 0 10px #ccc;-webkit-box-shadow: 0 0 10px #ccc;box-shadow: 0 0 10px #ccc;}
+.landingImg {line-height: 0px;}
+.cont_bg .landingWrapper {padding-top: 50px;padding-bottom: 10px;}
+.cont_bg .pagetitle {padding-bottom: 10px;}
+.cont_bg .landingPara {padding-bottom: 21px;}
+.landingEvent .landingPara {padding-bottom: 35px;}
+.cont_bg .landingHeading {padding-bottom: 18px;}
+.landingPara {padding-bottom: 34px;}
+.findMore a {display: inline-block;}
+.landingImg img {width: 100%;}
+.lineHeightNone{line-height:0px;}
+
+/* Privileges Welcome */
+.bannerGoldTxt {width: 100%;background: #B4975A;margin: 0;}
+.bannerGoldTxt .pagetitle-subTxt {color: #FFFFFF;padding: 34px 0 8px;letter-spacing: 2px;}
+.bannerGoldTxt .pagetitle {color: #FFFFFF;padding: 14px 0 28px;}
+.rowSection {margin-top: 93px;}
+.rowSection h4.first {padding-bottom: 4px;}
+.rowSection h4.first {letter-spacing: 2px;}
+.rowSection h4.last {padding-bottom: 35px;}
+.rowSection h1.mainHeading {padding: 0 0 22px;}
+.contentWrapper .divider {border-bottom: 1px solid #000;}
+.leftColumn {background: #EEEEEE;padding: 60px 50px 70px;box-sizing: border-box;}
+.leftColumn .mainHeading {color: #B5995C;}
+.contentHeading {font-size: 12px;letter-spacing: 1.1px;}
+.rightColumn .contentHeading {padding: 10px;border-bottom: 1px solid #fff;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {background: url('/views/citigold/images/sliderhead.png') center center;width: 27px;height: 32px;border: none;cursor: pointer;top: -13px;}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br, .ui-corner-left, .ui-corner-bl, .ui-corner-top, .ui-corner-tr, .ui-corner-all, .ui-corner-tl {border-radius: 0;}
+.dispfooter-group .col-sm-12 {padding: 0 0px;}
+.ui-slider-horizontal {height: 1px;border: none;background: #000000;cursor: pointer;}
+.ui-slider-horizontal .ui-slider-range {height: 3px;background: #B5995C;top: -1px;}
+.range-slider {margin-top: 15px;border-right: 1px solid #000000;padding-bottom: 5px;padding-top: 5px;border-left: 1px solid #000000;}
+.bggray {background: #eee;}
+.bggray > div {border-left: 1px solid #fff;}
+.content {padding: 16px 11%;margin: 0px auto;}
+.add-box {background: #B4975A;font-size: 16px;padding: 29px 25px 29px;color: #fff;position: relative;}
+.bdrGold {border: 1px solid #B4975A;}
+
+/* Privileges promotion */
+.leftColumn {padding:0;border-bottom: 1px solid #fff;}
+.leftColumn .contentHeading {padding: 10px;border-bottom: 1px solid #fff;}
+.leftColumn .bggray > div {border-bottom: 1px solid #fff;}
+ul.tab-two-column {margin-top: 0;}
+.giftSection .tabs {box-shadow: rgb(204, 204, 204) 0px 2px 4px;margin-top: -10px;}
+.promotion .upArrow li a {border-top: 0;}
+.promotion .upArrow li a.activeDisclaimer {border-top:0;padding: 14px 0px 14px 33px;}
+.promotion .upArrow li a::before {content: '';position: absolute;display: block;width: 15px;height: 8px;left: 10px;top: 18px;
+background-image: url(/views/citigold/images/icons/carat_grey.png);transition: all 600ms ease;}
+.promotion .upArrow li a {border-top: 0;padding: 14px 0px 14px 33px;font-size: 10px;line-height: 16px;width: 100%; color: #999999;}	
+.promotion ol.numLst li {font-size: 10px;letter-spacing: 0;line-height: 16px;margin-left: 12px;padding: 0 5px 9px 5px;width: calc(100% - 12px);clear: both;}
+.promotion ol.numLst .disc li {margin-left: 35px;}
+.new_disclaimers ol.numLst li{padding: 0 5px 9px 5px;}
+.new_disclaimers p {font-size: 10px;line-height: 16px;}
+.promotion .upArrow li a::before {content: '';position: absolute;display: block;width: 15px;height: 8px;left: 18px;top: 18px;    background-image: url(/views/citigold/images/icons/carat_grey.png);transition: all 600ms ease;}
+.promotion .upArrow li a.activeDisclaimer::before {transform: rotate(180deg);-moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);}	
+/* .funds-row .arrow {position:absolute;right:-15px;top:calc(50% - 16px);z-index:1;width: 0;height: 0;border-top: 16px solid transparent;border-bottom: 16px solid transparent;border-left: 16px solid #b59958;} */
+.funds-row .arrow {position:absolute;left:calc(50% - 16px);top:0;z-index:1;width: 0;height: 0;border-left: 16px solid transparent;border-right: 16px solid transparent;border-top: 16px solid #eeeeee;}
+.funds-row .arrow {top: -1px;}
+.contentHead,.contentDef{background:#eee;clear: both;display: table;width: 100%;}
+.contentHead > div:not(:last-child), .contentDef > div:not(:last-child){border-right: 1px solid #fff;}
+.contentDef .hSec{padding: 25px 20px;background:#b59958;color:#fff;position: relative;border-right:0;}
+.contentDef > div{border-bottom: 1px solid #fff;display: table-cell;vertical-align:middle;}
+.contentDef > div > h3{color:#B4975A;text-align:center;font-family: interstate-light, arial;}
+.contentHead > div{padding: 20px 15px;border-bottom: 1px solid #fff;display: table-cell;vertical-align:middle;font-size:12px;line-height: 16px;}
+.bonusa{color:#fff;}
+.hSecInner .add-details{}	
+.fr1{width:33.3%;}
+.fr2{width:33.3%;}
+.fr22{width:25%;}
+.fr3{width:33.3%;}
+.contentDef > div.mobcontentHead{display:none !important;}
+.visible-phone{display:none;}
+.hidden-phone{display:block !important;}
+.hidden-phone-table{display:table !important;}
+.cardsContainer .landingPara{padding:0}
+.cardsContainer{background:#eee;margin-top:147px;padding-bottom: 75px;}
+.cardsContainer h3 {padding-bottom: 36px;line-height: 16px;}
+.cardsContainer article:first-child .cardContent{border-right:1px solid #ccc;}
+.cardsContainer .cardContent {padding: 0px 35px 0px 20px;display:block;margin-top: 36px;}
+.cardsContainer .citigoldHomeWrap > img{margin-top:-85px;width: auto;}
+.cardContent ul{padding:10px 0 10px 18px;display: inline-block;}	
+.cardContent li{float: none;}
+.MB0{margin-bottom:0 !important;}
+.newThumb .landingPara{padding-bottom:0;}
+.newThumb .landingPara li{float: none;}
+.newThumb .landingPara ul{padding:0 0 0 2px;display: inline-block;}
+.giftSection .tabs{padding-bottom:40px;}
+.gifts{text-align:center;}
+.gifts li{display:inline-block; margin:30px 45px;float:none;}
+.overlayBulList {display: inline-block;}
+.overlayBulList li {background: url('/views/citigold/images/icons/bullet_small.png') no-repeat 0px 11px;font-size: 16px;letter-spacing: 0;line-height: 24px;margin-left: 2px;padding: 0 0 7px 23px;float: none;}
+.bull{background: url('/views/citigold/images/icons/bullet_small.png');display:inline-block;height:4px;width:4px;margin: -3px 10px 0 0;vertical-align: middle;}
+.promotion .overlayBulList {text-align: left;}
+.table-sm .table-column .tableHead div:last-child{text-align:center;}
+.table-sm .tableRow .goldTxt{text-align:center;}
+.clientArea img {margin-bottom: 10px;}
+.tandc, .tandc-center {color: #B4975A;font: 10px/30px interstate-bold, arial;letter-spacing: 0px;float: left;display: inline-block;padding-top: 11px;margin: 0px 0 30px;}
+.tandc-center {float: none;margin-bottom: 0;font-size: 16px;}
+.tandc2 {margin: 0px 0 10px;}
+.upgrade-text {font-size: 14px;height: 15px;}
+.add-box .before {position: absolute;top: -2px;left: 45%;}
+.min-content {font-size: 12px;line-height: 16px;padding-top: 20px;}
+.table-column {background: #eee;padding: 0 20px 0px;}
+.tableHead {font: 12px/16px interstate-light, arial;padding: 18px 0 16px;color: #666;letter-spacing: 0;border-bottom: 1px solid #fff;}
+.tableRow {padding: 10px 0;font: 26px/31px interstate-light, arial;color: #333;border-bottom: 1px solid #fff;}
+.tableRow.last {border: none;}
+.tableRow .goldTxt {color: #B4975A;font: 26px/31px interstate-light, arial;padding: 0;}
+.rgtImg {line-height: 0px;}
+.smallFont {font-size: 12px;line-height: 16px;display: inline-block;}
+.offerPara > p {padding-bottom: 25px;font-size: 16px;line-height: 24px;}
+.offerPara p.last {padding-bottom: 0;}
+.add-details {padding-bottom: 6px;}
+.rowSection {margin-top: 93px;}
+.rowSection2 h4.first {padding-bottom: 4px;}
+.rightPannel h4.pagetitle {color: #666666;}
+.radio-active .radio-label {color: #B4975A !important;}
+#preferential .upArrow li a {border-top: none;}
+#preferential .upArrow li a.activeDisclaimer {border-top: none;}
+
+/* Your team */
+.team .headSection h4 {padding-bottom: 0px;}
+.team .divider {margin-bottom: 0px;}
+.team .formBox {border: 1px solid #B39756;display: inline-block;padding-top: 29px;margin-bottom: 83px;}
+.formBoxPara {padding-bottom: 37px;}
+.formBoxPara>p {color: #595959;}
+.goalMgn {margin-bottom: 102px;}
+.team .headSection {margin-bottom: 93px;margin-top: 93px;}
+.fourColumn {margin-bottom: 100px;display: inline-block;margin-top: 15px;}
+.fourColumn h3 {color: #333;font-family: interstate-bold, arial;font-size: 16px;letter-spacing: 0;line-height: 24px;margin-bottom: 6px;}
+.formBoxPara .subHeading {padding-bottom: 15px;}
+.team .fourColumnTxt {margin-top: 27px;margin-bottom: 0px;}
+.fourColumnTxt.lastRow {margin-bottom: 17px;}
+.teamImg {margin-bottom: 15px;}
+
+/* Segment comparison */
+.tableTr>div {text-align: left;padding-top: 37px;}
+.segmentDivider {border-bottom: 1px solid #666666;}
+.tableHeader, .dropMenu {font-family: interstate-light, arial;}
+.tableHeader {font-size: 21px;letter-spacing: 0px;line-height: 24px;}
+.dropMenu>a {color: #333333;font-family: interstate-bold, arial;cursor: default;}
+.tableTr {border-bottom: 1px solid #000000;width: 100%;float: left;}
+.noBorder {border: 0px !important;}
+.tableHeader>div {margin-bottom: 24px;padding-top: 0px !important;}
+.color1 {color: #056DAE !important;}
+.color2 {color: #002A54 !important;}
+.color3 {color: #B4975A !important;}
+.color4 {color: #333333 !important;}
+.priceItem>div {color: #333333;font-size: 26px;letter-spacing: 0px;line-height: 24px;font-family: interstate, arial;}
+.tableTr .text-center {text-align: center !important;}
+.learnMore {color: #000000;font-size: 12px;letter-spacing: 0px;line-height: 24px;margin-top: 23px;}
+.tableSection {margin-top: 100px;margin-bottom: 100px;}
+.col2by5>p {margin-bottom: 34px;width: 100%;position: relative;padding-top: 35px}
+.tableSpacing .col2by5 {margin-bottom: 38px;}
+.priceItem .mobTxtRight {color: #333333;font-size: 26px;font-family: interstate, arial;letter-spacing: 0px;line-height: 24px;}
+.dropDown .col2by5>p:first-child {padding-top: 0px !important;}
+.circleBullet li {background: url('/views/citigold/images/icons/bullet_small.png') no-repeat 0px 10px;padding-left: 10px;float: none !important;}
+.circleBullet li:first-child {margin-bottom: 24px;}
+.tab-accordiant-header a {color: #333333;}
+.headerFirst .dropDown {padding-bottom: 10px;}
+.step4 {display: inline;}
+.tableTd .divider {position: absolute;width: 303px;left: 0px;bottom: -35px;margin-bottom: 0px;}
+.colTab3 .divider {width: 109% !important;}
+
+/* Home page */
+.Vertical-divider {border-left: 1px solid #999999;}
+.loginCredit>a {text-decoration: underline;padding-bottom: 8px;}
+.loginCredit {padding-top: 23px;margin: 20px 0;padding-bottom: 15px;padding-left: 47px;}
+.inputContainer {margin-top: 42px;display: inline-block;}
+.labelTxt {top: -19px}
+.homePageSection .callLine {margin: 20px 0 14px;}
+.pagebannerTxt {padding-top: 33px;padding-bottom: 5px;line-height: 24px;font-size: 16px;letter-spacing: 2px;}
+.circlePadding {padding: 0 0px;position: relative;display: block;margin: 10px 0;background-color: transparent;color: #222;text-align: center;border-radius: 50%;box-shadow:3px 3px 5px #ccc inset;}
+.impTxt {margin-top: 10px;}
+.new-circle {position: absolute;top: 0;bottom: 0;left: 0;width: 100%;height: 100%;cursor: pointer;}
+.circle__wrapper {display: table;width: 100%;height: 100%;}
+/* .circlePadding:before {box-shadow:3px 3px 5px #ccc inset;} */
+.circlePadding:after {display: block;padding-bottom: 100%;width: 100%;height: 0;content: "";border-radius: 50%;border: solid 2px #B4975A;box-shadow:2px 2px 5px #ccc;}
+.circle__content {display: table-cell;padding: 1.2em;vertical-align: middle;}
+.circle__content .circleCenter {position: absolute;left: 0%;width: 100%;}
+.circle__content .circleCenter .new-font {position: absolute;width: 100%;top: -44px;left: 0%;}
+.circle__content .circleCenter .new-subheading {position: absolute;left: 0%;top: 16px;text-align: center;width: 100%;}
+.new-font {font-size:26px;color: #333;line-height:30px;letter-spacing:3px;}
+.new-subheading {padding: 0 30px;font-size: 16px;color: #000000;line-height: 24px;}
+.new-line {border: solid 1px #B4975A;width: 50px;margin: 0px auto;}
+.new-top {box-shadow: 0px 1px 5px #888888;margin-top: -20px;z-index: 1;position: relative;background: #fff;}
+.uncheck {background: url('/views/citigold/images/icons/checkbox_uncheck.png') no-repeat;display: inline-block;margin-top: 8px;}
+.checked {background: url('/views/citigold/images/icons/checkbox_checked.png') no-repeat;display: inline-block;margin-top: 8px;}
+.unChecked {background: url(/views/citigold/images/icons/Checkbox_error.png) no-repeat;display: inline-block;margin-top: 8px;}
+.uncheck input, .checked input {margin-right: 14px;}
+.videoSection {margin: 0px;padding: 0px;line-height: 0px;}
+.videoContainer .gray-containerBg {}
+.videoCont {margin-bottom: 15px;}
+.limelight-player-footprint {background-color: transparent !important;}
+.limelight-player-viewport > div {background-color: transparent !important;}
+.LimelightEmbeddedPlayer {text-align: center;display: inline-block;width: 100%;}
+.videoSegment .lightbox-body {max-height: 700px !important;}
+.btnStyle2 {width: 40% !important}
+.findOutBtn,.articleBtn {width: 43%;}
+.watchbtn {margin-left: 15%;}
+.sidephoto-wrapper img{width:100%;}
+.desktopCircle .col3{padding:0 20px;}
+
+/* Insights */
+#us-presidential-artimg1 {background-repeat: no-repeat;background-position: center top;background-size: cover;background-image: url('/views/citigold/images/us-presidential/poll-your-view.jpg');}
+.disclaimer {color: #999999 !important;font-size: 10px !important;line-height: 16px !important;padding-bottom: 10px !important;}
+h4.paraHeading {color: #333333;font-family: interstate-light, arial;font-size: 26px;line-height: 34px;margin-bottom: 8px;}
+.cg-boxmodel {padding: 32px 40px 34px;border: 1px solid #b4975a;margin-bottom: 40px;}
+h2.largeHeading {font-size: 42px;letter-spacing: 0;line-height: 50px;padding-bottom: 22px;}
+h4.mediumHeading {color: #333333;font-family: interstate-light, arial;font-size: 26px;line-height: 34px;padding-bottom: 32px;}
+.commonBtnStyle {width: 55%;}
+ul.solidBulletList {display: inline-block; padding: 0 0 8px;}
+ul.solidBulletList li {background: url('/views/citigold/images/icons/bullet_small.png') no-repeat 1px 9px;font-size: 16px;letter-spacing: 0;line-height: 24px;padding: 0 0 7px 26px;width: 100%;}
+ul.solidBulletList li p {padding-bottom: 8px;}
+ul.solidBulletList li ul li {background: url('/views/citigold/images/icons/square-bullet.png') no-repeat 2px 12px;font-size: 16px;letter-spacing: 0;line-height: 24px;padding: 0 0 7px 26px;width: 100%;}
+.cg-boxmodel p {font-size: 16px;line-height: 24px;padding-bottom: 25px;color: #333333;font-family: interstate-light, arial;}
+.accordiant-content .termsCondtion  a, .disclaimer a{word-break: break-all;}
+.marginTop10 {margin-top: 10px;}	
+.marginTop20 {margin-top: 20px;}	
+.marginTop25 {margin-top: 25px;}	
+.marginTop30 {margin-top: 30px;}
+#electionVideoImg1 {background-repeat: no-repeat;background-position: center top;background-size: cover;background-image: url('/views/citigold/images/us-presidential/article4/election-video-thumb.jpg');cursor: pointer;}
+#forElectionVideo.videoContainer .gray-container {display: inline-table;padding: 0px 40px 0 40px;}
+#forElectionVideo .findMore {margin-bottom: 0px !important;padding-bottom: 0px!important;}
+#electionFbLiveImg {background-repeat: no-repeat;background-position: center top;background-size: cover;background-image: url('/views/citigold/images/us-presidential/placeholder-808-462.jpg');}
+#fbookVideoImg {background-repeat: no-repeat;background-position: center top;background-size: cover;background-image: url('/views/citigold/images/insights/fbook-video-thumb.jpg');cursor: pointer;}
+.box-border{box-shadow: 0 1px 4px #bfbfbf;padding:20px;}
+.tab-two-column li:after{border-right:1px solid #ccc;content:"";float: right;height: 100%;}
+.tab-two-column li:last-child:after{border-right:0px !important;}
+.noBorderRight:after{border-right: 1px solid #eee!important;content: "";float: right;height: 100%;}
+.tab-two-column li.tab-two-column-active:after{border-right:1px solid #fff;content:"";}
+.progressbarbg {background-color: #fff;background-repeat: repeat;position: relative;overflow: hidden;}
+.progressbarbg span {font-size: 12px;position: absolute;right: 0;z-index: 9;vertical-align: middle;display: table-cell;color: #fff;padding: 13px 10px;width: 100%;text-align: right;}
+.progressing {background-color: #B3965A;background-repeat: repeat;height: 50px;width: 0;position:relative;transition: background 1s ease, width 1s ease;}
+.paddingSpace{padding-top:20px;padding-bottom:20px;}
+.barChart{border:1px solid rgba(191,191,191, .5);}
+.col2by3{width: 16.3%;position: relative;padding: 0 10px}
+.commonTab .tableTr>div{padding-bottom:16px;padding-top:18px;display: inline-block;width: 100%;}
+.commonTab .headerFirst{border-top: 1px solid rgba(191,191,191, .5);}
+.commonTab .tableTr{border-bottom:0px;}
+.commonTab  .dropMenu>a{font-family:interstate-light, arial;}
+.cc-space-top{margin-top:90px;}
+.cc-space-bottom{margin-bottom:120px;}
+.commonTab .col1{text-align:center;}
+.graph-tab .seperator{border-bottom: 1px solid #bfbfbf;} 
+.blockTitle {font-family: interstate-light, arial;font-size: 26px;line-height: 32px;color: #333333;}
+.draggableTab{display:inline-block;width:100%;}
+.innerdraggableTab{padding:2px;height:115px;}
+.innerdraggableTab .tab-two-column li,.innerdraggableTab .tab-two-column li.tab-two-column-active{width:25%;}
+.plot1{display: inline-block; border: 1px solid #bfbfbf;padding: 6px;margin-right: 5px;}
+.plot-goldColor{ background: #B3965A;}
+.plot-whiteColor{ background: #fff;}
+.plot-goldLight{ background: #b5985c;}
+.poltPos{padding-right:20px;}
+.graph-tab  .tab-two-column{margin-top:12px;}
+.graph-tab .three-column {margin-bottom: 33px;}
+.graph-tab .bannerImg{line-height:0px;}
+.margin-btm10{margin-bottom:10px}
+.margin-btm20{margin-bottom:18px}
+.padding-btmTxt20{padding-bottom:7px !important;}
+.margin-top10 {margin-top: 10px;}
+.margin-top20{margin-top:18px}
+.margin-btm40{margin-bottom:33px}
+.margin-top40{margin-top:33px}
+.margin-top100{margin-top:100px}
+.margin-btm6 {margin-bottom: 6px;}
+.noMargin-btm{margin-bottom:0px !important}
+.padding-10{padding:0 10px;}
+.tableHeader-bg {background: #eee;}
+.largeFont{font: 26px/31px interstate, arial;}
+.plot-grayColor{background:#333;}
+.link-font > a{font-size: 26px;line-height: 32px;}
+.box-borderDiv{border: 1px solid rgba(191,191,191, .5);padding:20px;}
+.graph-tab .column-detail p{padding-bottom: 8px;}
+.subTitle h2.mainHeading {padding: 0 0 38px;}
+.rightPannelStyle2 .new_disclaimers p{font-size: 10px;line-height: 16px;}
+.nopaddingImp {padding: 0px !important;}
+svg{overflow:hidden}
+.autoWidth{width:auto !important}
+.margin-right40{margin-right:40px;}
+
+.your-team {width: 100%;border-top: 1px solid #cccccc;margin-bottom: 90px;}
+.cg-boxmodel.team-box {width: 100%; margin: 50px 0 80px;padding: 32px 100px 34px;}	
+.team-box h3 {font-size: 26px; line-height: 40px; color: #666666;}
+.team-box span {font-size: 18px;color: #666666;	padding-top: 10px;display: block;}
+.team-specialist {width: 100%;margin-bottom: 40px;}
+.team-specialist h2 {border-bottom: 1px solid #cccccc; width: 100%;padding-bottom:35px;}
+.specialist-block {padding-bottom: 40px;}
+.team-specialist h4 {font-family: interstate, arial;margin-bottom: 5px;padding-top: 40px;}
+.team-specialist p {line-height: 24px;}
+.footer-fixed {background-color: rgba(255, 255, 255, 0.9);position:fixed; bottom: -1px;width: 100%;float: left; -webkit-box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.2);-ms-box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.2);box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.2);z-index: 3;display:none;}
+.footer-fixed.fixed {position: relative; background-color: rgba(255, 255, 255, 1);}
+.fixed-links {padding: 20px 0;display: block;width: 100%;text-align: center;}
+.fixed-links a, .fixed-links > span {display: inline-block;margin: 0 40px;font-size: 21px;color: #B4975A;}
+.fixed-links a span.link-text, .fixed-links > span span.link-text {padding-top: 8px;display: inline-block;font-family: interstate-light, arial;}	
+.fixed-links a span.call-text, .fixed-links span.call-text {color: #333333;padding-right:5px;}
+#contactus-form .form-section, #applynow-form .form-section {padding: 70px 0 80px 0;}
+.centres-section {margin-top: 34px;}
+.centre-heading {font: 400 16px/16px interstate, arial;padding-bottom: 5px;}
+.centres-section p {padding-bottom: 40px;width: 100%;float: left;}
+.centres-section p > span {width: 100%;float: left;}		
+.hero_banner_cta .row-height {display: table;width: 100%;height: 100%;table-layout: fixed;}
+.hero_banner_cta .row-height .col-height {display: table-cell;float: none;height: 100%;vertical-align: middle;}
+.white-card {background-color: rgba(255,255,255,.9);}
+.gold-card {background-color: rgba(180, 151, 90, 0.9);}
+.hero_banner_cta .content-wrap {margin: 20px;padding: 10px 0;}
+.cta-wrap p {color: #ffffff;font-size: 16px; line-height: 24px;}
+.pageBanner .hero_banner_cta .pagetitle {padding: 27px 0 20px 0;}
+.hero_banner_cta .pagetitle-subTxt {padding-bottom: 30px;}
+.banner-cta {margin-top: 20px; padding: 10px 20px; color: #B4975A;background-color: #ffffff;}
+.banner-cta:hover {color: #ffffff;background-color: #000000;}
+.accordiant.applyNow {border-top: 1px solid #bbbbbb;border-bottom: 1px solid #bbbbbb;}
+.accordiant.applyNow .accordiant-header {border: none;}
+.applyNow .accordiant-header div a {margin: 16px 0;text-align: center;color: #B5995C;font-size:20px; font-weight: bold;background: none;}
+.applyNow .accordiant-header div a span {padding: 0 24px 0 12px;display: inline-block;position: relative;}
+.applyNow .accordiant-header div a span:after {background: url(/views/citigold/images/icons/carat_gold.png) no-repeat;content: '';    position: absolute;width: 15px;height: 8px;right: 0;transition: all 600ms ease; top: 8px;}
+.applyNow .accordiant-header.active-state {background: none;}
+.applyNow .accordiant-header.active-state div a {font-family: inherit;}
+.applyNow .accordiant-header.active-state div a span:after {transform: rotate(180deg);-moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);}
+.applyNow .accordiant-content {background: none; width: 100%;}
+.applyNow .form-section {padding-bottom: 40px;}
+.footer-bar {display: block;width: 100%;padding: 18px; margin-bottom: 40px;background-color: #333333; color: #fff;text-align: center;}
+.visibleBigscreen {display: none;}
+.overseas-number {display: none;}
+.qr-code {display: block;width:100%;text-align: center;}
+.qr-code img {width: 100%;height: auto;}
+.qr-code span {font-size: 10px;line-height:16px;display: block;}
+.bestTime {font-size: 16px;}
+.bestTime .select-row {display: block;width: 100%;margin: 30px 0 20px;}
+.bestTime .select-row .inputField {margin-bottom: 0;}
+.select-row .from-row, .select-row .to-row {display: inline-block;}
+.bestTime-inner .errorCode {display: block;float: none;}
+ .bestTimeForm .textAreaBox {height: 103px;} 
+ .bestTime-radio {padding-right: 0;}
+ .bestTime-radio .radio-label {padding-left: 6px;}
+.select-row > span {width: 95px;display: inline-block;}
+.select-row .from-row {margin-right: 15px;}
+.bestTime .select-row .errorCode {padding-top: 11px;}
+.inter-light {font-family: interstate-light, arial !important;}
+.inter {font-family: interstate, arial !important;font-weight: normal;}
+.inter-bold {font-family: interstate-bold, arial !important;font-weight: normal;}
+.full-width {width:100%;}
+
+@media (min-width: 1740px) {
+	.visibleBigscreen {display: block;}
+	.hideBigscreen {display: none;}
+	.pageBanner .mastHeadImage {height: 600px;overflow: hidden;}
+	.pageBanner .mastHeadImage img {max-width: none;transform: translateX(-50%);margin-left: 50%;height: 600px; width: auto;}
+	.HomeBanner .innerBanner {margin: 0;}
+}
+
+@media (min-width: 2150px) {
+	.pageBanner .mastHeadImage img {width: 100%;height: auto;}
+}
+
+@media (max-width: 1500px) {
+    .container {width: 100%;}
+    .bannerImg,
+    .pageBanner {width: 100%;}
+    .leftNav-ul,
+    .leftBarFixed .leftNav-ul {width: 309px !important;}
+    .wtSoution .col10.innerContainer {width: 100%;}
+    .wtSoution .col-md-10.innerContainer {width: 100%;}
+}
+
+@media (max-width: 1499px) and (min-width: 992px) {
+	.custom-offset {margin-left: 5%;}
+	.qr-grid {float:right;width:120px;}
+}
+
+@media (max-width: 1400px) {
+    .leftNav-ul,
+    .leftBarFixed .leftNav-ul {width: 300px !important;}
+}
+
+@media (max-width: 1300px) {
+    .leftNav-ul,
+    .leftBarFixed .leftNav-ul {width: 258px !important;}
+    .wtSoution .col10 {width: 100%;}
+	.innerBanner {width: 62.2%;}
+	.commonBtnStyle {width: 57%;}
+}
+
+@media (max-width: 1200px) {
+	.col2by5 {width: 24%;}
+    .leftNav-ul li > a {padding: 18px 18px;}
+    .videoContainer .gray-container {padding: 40px 40px 0px 40px;}
+    .leftNav-ul,
+    .leftBarFixed .leftNav-ul {width: 246px !important;}
+    .dropdown-menu {width: 40%;}
+    .callLine {font-size: 21px;line-height: 24px;}
+    .innerBanner {/*margin: 33px auto;*/width: 78.2%;}
+    .visibleTabPhone {display: inline-block !important;}
+    .visibleDesktopOnly {display: none !important;}
+    .footerTc li {margin: 0px 10px 0px 0px;}
+    .mobileTabHidden {display: none;}
+    .col10.innerContainer {width: 100%;}
+    .col-md-10.innerContainer {width: 100%;}
+    .lightbox-open #pageWrappper {position: fixed;}
+    .ipadImg {margin-top: 0px;position: relative;}
+    .menuClose:after {width: 0px !important;}
+    #lifestyle-numLst ol.numLst {margin-left: 8px;}
+    #lifestyle-numLst ol.numLst li {padding: 0 0 9px 5px;width: 100%;}
+    .priceItem .mobTxtRight {font-size: 18px;}
+	.sticky {top: -2px;}
+	.gsc-table-cell-thumbnail {width: 11% !important;}
+	.desktopCircle .col3{padding:0 10px;}
+	.bannerTxt {display: flex;}
+	#forElectionVideo.videoContainer .gray-container {padding: 0px 40px 0px 40px;}
+	.rowtableBlock{font-size:14px;}
+	.innerdraggableTab .tab-two-column li,.innerdraggableTab .tab-two-column li.tab-two-column-active{width:350px;}	
+	.fixed-links a, .fixed-links > span {margin: 0 20px;}
+	.gsc-results-wrapper-overlay {left: 8% !important;width: 84% !important;}
+}
+
+@media (max-width: 1100px) {
+    .leftNav-ul,
+    .leftBarFixed .leftNav-ul {width: 209px !important;}
+	.progressbarbg span {padding: 13px 3px;}
+	.bestTime-radio .radio-label {font-size: 15px;}
+}
+
+@media (max-width: 1000px) {
+	.innerBanner {width: 77%;margin: 0px auto;}
+	.HomeBanner .innerBanner {margin: 0;}
+	.innerBanner{padding: 1px 20px;}
+    .leftNav-ul .leftNav-active {background: #FFFFFF;}
+    .leftNavBarSection,
+    .rightPannel {margin: 20px 0 0px;}
+    .leftNav-active .arrow {display: none;}
+    .leftNav-ul li > a {width: 100% !important;box-sizing: border-box;}
+    .leftNav-ul {width: 100% !important;display: none !important;}
+    .leftBarFixed .leftNav-ul {width: 100% !important;}
+    .leftNav-ul li > a {width: 94%;font-size: 16px;}
+    .leftBarFixed {width: 24% !important;}
+    .ipadImg {margin-top: 0px;position: relative;}
+    .content {font-size: 14px;padding: 16px 7%;}
+    .imgAlter .rgtTxt {padding-left: 20px;}
+    .imgAlter .lftTxt {padding-right: 20px;}
+    .gray-container h2 {font-size: 28px;line-height: 35px;}
+    .gray-container {padding: 22px 20px 24px;}
+    .firstVideoContainer .gray-container {padding: 40px 60px 0px 40px;}
+    .videoContainer .gray-container {padding: 40px 40px 0px 32px;}
+    #forElectionVideo.videoContainer .gray-container {padding: 0px 40px 0px 32px;}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.homebanner_cta h1.mainHeading {font-size: 34px;line-height: 38px;padding-bottom: 10px;}
+	.homebanner_cta .pagebannerTxt {padding-top: 20px;}
+	.homebanner_cta .landingPara {padding-bottom: 20px;}
+	.hero_banner_cta .cta-wrap p {line-height: 20px;}
+	.china .color2, .china .color3, .china .color4 {font-size: 18px;}
+	.chinese .contentDef .hSec {font-size: 14px;}
+}
+
+@media (max-width: 991px) {
+    .bannerImg div {/*height: 340px;*/}
+    .bannerTxt {/* height: 340px;*/}
+	.gsc-table-cell-thumbnail {width: 17% !important;}
+	.new-font{letter-spacing: 0px;font-size: 2.2vw;}
+	.circle__content {padding: 0.2em;}
+	.new-subheading {padding: 0 20px;font-size: 1.8vw;}
+	.imagePara img{width:100%;}
+	/* .fixed-links a, .fixed-links > span {margin: 0 8px;font-size: 14px;} */
+	.footerInfo .mobRow .col-md-3 {width: 27.7%;}
+	.bestTime-radio .radio-label {font-size: 16px;}
+}
+
+@media (max-width: 768px) {
+    #menuMobile {display: none !important;}
+    .leftColumn {padding: 60px 77px 70px;}
+	.HomeBanner .innerBanner {width: 59%;}
+	.visibleSM {display:block !important;}
+	.tableHeader-bg {font-size: 15px;}
+	.add-box-gold .before {position: relative;top: -30px;left: 0;}
+	.visibleSML {display: none !important;}
+	.visibleSMP {display: block !important;}
+	.add-box-gold {height: 202px;}
+}
+
+@media only screen and (min-device-width: 1024px) and  (orientation : landscape) {
+	.gray-container {padding: 40px 40px 30px;}
+	.add-box-gold {height: 650px;}
+	.visibleSML {display: block !important;}
+	.visibleSMP {display: none !important;}
+}
+
+@media (min-width: 768px) and (max-width: 855px) {
+    .new-subheading {line-height: 2.5vw;}
+	.hSec h3.subHeading {font-size: 18px;}
+}
+
+@media only screen and (device-width: 768px) {
+	.gray-container {padding:30px 40px 10px;}
+	.innerdraggableTab .tab-two-column li, .innerdraggableTab .tab-two-column li.tab-two-column-active {width: 266px;}
+	.tab-two-column li{font-size:22px;line-height: 28px}
+}
+
+/* *******************************************
+    fixed some alignmet issues
+******************************************* */
+/* ************* CHANGES START ************* */
+
+@media (max-width: 798px) {
+    .innerBanner {/*width: 82%;*/}
+}
+
+@media (min-width: 768px) and (max-width: 855px) {
+    .new-subheading {line-height: 2.5vw;}
+}
+
+@media (max-width: 767px) {
+	.dispheader-group .visibleMobile{width:100% !important;}
+	.HomeBanner .leadingTxt,.HomeBanner .landingPara{font-size: 16px;line-height: 24px;}
+	.sticky {-webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0);-moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);box-shadow: 0 0px 0px rgba(0, 0, 0, 0);box-shadow: 0 0px 0px rgba(0, 0, 0, 0);}
+	.menuShadow{-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);z-index: 9;position: relative;}
+	.landingPara {font-size: 16px;line-height: 24px;}
+	.transformVertical{display: block;}
+    .rightPannelStyle2 .headerMob .upArrow li a::before {left: 20px;}
+    .noRowMobile {margin-right: 0px;margin-left: 0px;}
+    #menuMobile {display: block !important;}
+    .leftNavBarSection {position: absolute;top: 10px !important;z-index: 9999999999;/* height: 240px; */background: #fff;left: 0px !important;}
+    .innerBanner {margin: -11.4% auto 1%;max-width: 840px;padding: 0px;}
+	.bannerTxt {height: auto;display: block;-webkit-box-align: center;-ms-flex-align: center;-ms-grid-row-align: center;align-items: center;}
+    .citigoldThumbContainer {margin-bottom: 0px;}
+    .citigoldThumbWrap div {height: 175px !important;background-position: center center;}
+    .videoSection div {height: 360px;background-position: center center;}
+    .videoContainer .gray-containerBg {display: inline-block !important;}
+    .eventsGray div {height: 370px;background-position: center center;}
+	.new-subheading {font-size: 14px;padding: 0 20px;}
+	.menuBar {-webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0); -moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);box-shadow: 0 0px 0px rgba(0, 0, 0, 0); box-shadow: 0 0px 0px rgba(0, 0, 0, 0);}
+	.thumpContainerVideo div {height: 300px;}
+	.dropdown-menu a:first-child {border-top: 0px solid rgba(0, 0, 0, 0.1);}
+	.emailUs{margin-bottom: 80px;}
+	.team .headSection {margin-bottom: 80px;}
+	.center-row {display:block;}
+	.center {display: inline-block;}
+	.padding80{padding-bottom:47px;}
+	.gsc-result .gs-title {height: 3em !important;}
+    .headerMob .col-sm-12 {padding: 0 20px;}
+    .headerMob .numLst {width: 99%;}
+    .range-slider {width: 80%;margin: 5px auto;}
+    .watchbtn {margin-left: 0%;}
+    .videoSection div {height: 395px;background-position: center center;}
+    .eventsGray div {height: 180px;background-position: top center;}
+    .innerBanner {margin: -11.4% auto 1%;max-width: 840px;padding: 0px;}
+    .new-font {font-size: 3.2vw;}
+    .new-subheading.visibleMobile {padding: 0 10px;margin-bottom: 12px;min-height: 64px;display: block !important;clear: both;}
+    .draggable-container.col-sm-10 {width: 83.33333333%;}
+    .pagetitle-subTxt {padding-left: 20px;padding-right: 20px;}
+    .mobContainer {display: table;content: "";padding-right: 10px;padding-left: 10px;margin-right: auto;margin-left: auto;width: 100%;}
+    body {font-family: interstate-light, arial;font-size: 12px;line-height: 16px;color: #333333;margin: 0;background: #ffffff;}
+	h4.pagetitle {font-size: 12px;line-height: 18px;letter-spacing: 1px;}
+    h3.subHeading {font-size: 16px;line-height: 24px;letter-spacing: 1px;}
+    h2.mainHeading {font-size: 26px;line-height: 32px;padding-bottom: 40px;}
+    h1.mainHeading {font-size: 26px;line-height: 32px;padding-bottom: 45px;}    
+    .topMenu ul.lang-switch li {margin: 7px 0px 0 20px;}
+    .menubar-ul > li {margin: 0px 14px;}
+    .pageBanner .bannerGoldTxt .pagetitle {font-size: 42px;line-height: 50px;padding: 0px 0 39px 0;width: 80%;margin: 0px auto;}
+    .pagetitle-subTxt {letter-spacing: 0px;font-size: 16px;line-height: 24px;letter-spacing: 0px;}
+    .radio-label {padding-left: 8px;font-size: 14px;}	
+    .pageBanner .pagetitle-subTxt {width: 100%;margin: 0px auto;}
+    .bannerGoldTxt .pagetitle-subTxt {padding: 35px 0 0px;}
+    .dispfooter-group {display: table-footer-group;}
+    .dispheader-group {display: table-header-group;}
+    .gsc-table-cell-thumbnail {width: 25% !important;}
+    .gs-promotion table {width: 100% !important;}
+    .banner {height: 55px;}
+    .mobpullLeft {float: left!important;}
+    .searchHeader {padding: 20px 0 0px 0;}
+    .menubar-ul > li >a, .logInbtn >a {font-size: 14px;line-height: 14px;}
+    .menubar-ul.pull-right li {border-left: 1px solid #eeeeee;}
+    .sub-navbar-list {float: left;}
+    .logInbtn a {text-align: center;}
+    .logoWrapper {padding: 13px 0 0;}
+    .menubar-ul > li, .logInbtn {padding: 16px 0px 17px 0px !important;}
+    .dropdown-menu {background: #ffffff;}
+    .dropdown-menu a {border-right: 0px;padding: 37px 20px 44px 40px;border-left: 0px;}
+    .dropdown-menu a:last-child {border-radius: 0px;}
+    .bannerHeader {padding: 20px 0 0px 0;}
+    .footer-heading {background: url("/views/citigold/images/icons/carat_down_footer.png") no-repeat 20px 20px;display: inline-block;width: 100%;padding-bottom: 0px;cursor: pointer;}
+    .footer-heading.activeFooter {background: url("/views/citigold/images/icons/carat_up_footer.png") no-repeat 20px 20px;}
+    .footer-heading {padding: 13px 0 16px;border-bottom: 1px solid rgba(255, 255, 255, 0.5);display: inline-block;width: 100%;font-family: interstate, arial;padding-left: 55px;}
+    .footer-heading.firstChild {border-top: 1px solid rgba(255, 255, 255, 0.5);}
+    .footerlist-ul {margin-top: 12px;}
+    .footerlist-ul > li:last-child {border-bottom: 1px solid rgba(255, 255, 255, 0.5);}
+    .footerlist-ul > li {padding-left: 55px;}
+    .footerlist-ul, .footer-divider {display: none;}
+    .footer-logo {padding: 20px 0 36px}
+    .menuRow {width: 100%;}
+    .footerInfo {margin-bottom: 0px;width: 100%;}
+    .footerTc {padding-bottom: 9px;padding-top: 31px;}
+    .footerTc ul > li {width: 100%;}
+    .footerTc a {padding-bottom: 21px;}
+    .copyright {padding-bottom: 36px;padding-top: 0px;}
+    .copyright.text-right {text-align: left;}
+    .footer-nav-ul {margin: 0px 0px 20px 0;}
+    .citi_logo {padding: 20px 0 26px;}
+    .socialIcon ul>li {padding-left: 48px;padding-top: 29px;}
+    .pagefooter .seperator {display: none;}
+    .menuRow .container {padding-left: 0px;padding-right: 0px;}
+    .mobTxtRight {text-align: right;}
+    .callLine {padding-top: 40px;}
+	.callLine.mobpadding-btm35 {padding-top: 25px;}
+    .callLine.border-right {border: 0px;}
+    .form-section .inputField {margin-bottom: 20px;}
+    .radio-btn {font-size: 12px;}
+    .form-toplable {font-size: 16px;line-height: 24px;padding-bottom: 17px;letter-spacing: 0px !important;}
+    .form-section {padding: 31px 0 0;}
+    .chatDiv {margin-left: 0px;}
+    .innerBanner,.HomeBanner .innerBanner {margin: -11.4% auto 1%;width: 100%;background: rgba(255, 255, 255, 1);}
+    .bannerTxt {position: relative;}
+    .chatsection {border-top: 0px;border-bottom: 0px;}
+    .chatsection .disclimer span {padding-bottom: 38px;padding-top: 22px;}
+    .innerBanner .pagetitle {font-size: 42px;line-height: 50px;}
+    .callLine {font-size: 16px;line-height: 24px;/* margin: 0px 11px; */margin: 0;}
+    .leftNavBarSection, .rightPannel {margin: 20px 0 20px;}
+    .accordiant-header {font-size: 16px;line-height: 24px;}
+    .acc_subTxt {font-size: 16px;line-height: 24px;padding-left: 39px;padding-bottom: 33px;}
+    .tickList li {background: url(/views/citigold/images/icons/check.png) no-repeat scroll 0px 4px transparent;padding: 0px 0px 19px 35px;}
+    .tickList {margin-left: 0px;}
+    .cont_Landing *[class^="landing"], .landingWrapper .pagetitle, .text-right.landingWrapper, .landingPara {text-align: center;}
+    .landingHeading.pull-right, .landingHeading.pull-left {float: none;width: 100%;}
+    .findOutBtn, .articleBtn {width: 100%;}
+    .commonBtnStyle{width: 100%;}
+    .cont_bg .landingWrapper {padding: 0px 20px;}
+    .landingWrapper {background: #fff;}
+    .landingHeading {font-size: 26px;line-height: 30px;}
+    .findOutBtn, .btnStyle2 {margin-bottom: 80px;text-align: Center;width: 100% !important;}	
+	.findMore {margin-bottom: 80px;text-align: Center;}
+    .btnStyle2 {width: 45% !important;}
+    .form-section .input-box {width: 100%;}
+    .mobile-rowcenter *[class^="col"], .mobile-rowcenter *[class^="col-"] {float: left;}
+    .nopaddingMobile {padding-right: 0px;padding-left: 0px;}
+    .paddingMobileRight {padding-right: 10px;}
+    .paddingMobileLeft {padding-left: 10px;}
+    .paddingMobile {padding-right: 10px;padding-left: 10px;}
+    .first-row {margin-top: 0px;}
+    .mobRow {margin-right: -10px;margin-left: -10px;}
+    .mobRow2 {margin-right: -20px;margin-left: -20px;}
+    .landingEvent {background: #fff;}
+    .offerlist-ul {display: none;padding: 10px 54px 10px;border-bottom: 1px solid #464646;float: left;width: 100%;}
+    .pageTitleBorder {border-bottom: 1px solid #666666;}
+    .emailUs .inputField {margin-bottom: 20px;}
+    .emailUs .shortForm {margin-bottom: 20px;margin-left: 0px;}
+    .emailUs.mg-btm-100 {margin-bottom: 80px;}
+    .radio-btn {background: url("/views/citigold/images/icons/oval.png") no-repeat 0 0px;}
+    .radio-active {background: url("/views/citigold/images/icons/radio_selected.png") no-repeat 0 0px;}
+    .radioBtnerror {background: url("/views/citigold/images/icons/oval_red.png") no-repeat 0 0px;}
+    .pageBanner .pagetitle {padding: 23px 0 12px 0;}
+    .rightPannelInfo .pagetitle {padding: 0px 0 9px 0;}
+    .rightPannelInfo {padding-bottom: 33px;padding-top: 0;}
+    .rightPannelInfo .mainHeading {padding-bottom: 33px;}
+    .cont_Landing h2.mainHeading {padding-bottom: 29px;}
+    .cont_Landing .landingPara {padding-bottom: 40px;font-size: 16px;line-height: 24px;}
+    .cont_Landing .findOutBtn, .cont_Landing .findMore {margin-bottom: 80px;}
+    .cont_Landing .watchbtn {margin-bottom: 20px !important;}
+    .cont_Landing {margin: 0 0 0px 0;}
+    .cont_LandingMobile {background: #fff;}
+    .cont_bg_shadow {box-shadow: 0px 0 0;}
+    .landing_img2, .team_img1, .team_img2, .privy_img1, .privy_img2 {height: 203px;}
+    .events .formBox {margin-top: 36px;margin-bottom: 70px;padding-top: 15px;}
+    .events .submit-box {margin-bottom: 39px;}
+    .events .subheadingTxt {padding: 29px 0 35px 0;}
+    .mobtext-left {text-align: left;}
+    .no-pullRight {float: none !important;}
+    .mobtext-center {text-align: center;}
+    .copyrightLogo {padding-top: 7px;}
+    .chatDiv {display: inline-block;padding-top: 8px;width: calc(100% - 52px);}
+    .callLine .verticalFix {padding-top: 0px;}
+	.submit-box {margin-bottom: 80px;}
+    .dropdown-wrapper {margin-top: 10.5%;width: 100%;left: 0px !important;}
+    .dropdown-menu {width: 100%;left: 0px !important;max-height: 183px;overflow: auto;overflow-x: hidden;box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.095);-moz-box-shadow:  0px 2px 10px rgba(0, 0, 0, 0.095);-webkit-box-shadow:  0px 2px 10px rgba(0, 0, 0, 0.095);box-shadow:  0px 2px 10px rgba(0, 0, 0, 0.095);border-bottom: 1px solid rgba(0, 0, 0, 0.1);}
+    .footer-seperator {border: 0px;}
+	
+    /* Privileges landing */
+    .imgAlter {margin-top: 0;}
+    .imgAlter .rgtTxt {margin-top: 41px;padding-left: 10px !important;}
+    .imgAlter .lftTxt {margin-top: 41px;padding-right: 10px !important;}
+    .imgAlter.lastChild {margin-bottom: 0px;}
+    .emailUs .submit-box {margin-left: 0px;margin-bottom: 0px;}
+    .cont_Landing img {width: 100%;}
+	
+    /* Privileges promotions */
+	.setBtmSpace {margin-bottom: 0px;}
+	.funds-row .arrow {left: calc(50% - 12px);top: 0;border-left: 12px solid transparent;border-right: 12px solid transparent;border-top: 12px solid #eee;}
+	.chinese .funds-row .arrow {left: calc(50% - 12px);top: 0;border-left: 12px solid transparent;border-right: 12px solid transparent;border-top: 12px solid #eee;}
+	.contentDef .hSec{text-align:center;}
+	.contentHead > div:not(:last-child), .contentDef > div:not(:last-child){border-right: 0;}
+	.fr1,.fr2,.fr22,.fr3{width:100%;}
+	.contentHead > div{display:block;padding:10px 0;}
+	.contentDef > div{display:block;padding:0;border-bottom:0;}
+	.contentDef .fr1 {padding: 10px 0;border-bottom: 1px solid #fff;}
+	.contentHead div:last-child{border-bottom: 0;}
+	.mobBorBtm{border-bottom: 1px solid #fff !important;}
+	.middleBlock{padding:10px 0 0 0 !important;border-top: 1px solid #fff;border-bottom: 1px solid #fff !important;}
+	.contentDef > div > h3 {padding: 0 0 10px 0;font-size:28px;line-height:32px;}
+	/* .contentDef .hSec {margin: 0 0 15px 0;} */
+	.contentDef > div.mobcontentHead{display:table !important;}
+	.visible-phone{display:block !important;}
+	.hidden-phone{display:none !important;}
+	.hidden-phone-table{display:none !important;}
+	.cardsContainerout > .container{padding:0;}
+	.cardsContainerout{margin-bottom:40px;}
+	.newThumb .landingPara{padding-bottom:40px;}
+	.gifts li {margin: 20px;}
+	.cardsContainer .citigoldHomeWrap > img {margin-top: 0;}
+	.cardsContainer article:first-child .citigoldHomeWrap > img {margin-top: -85px;}
+	.cardsContainer {margin-top: 85px;padding-bottom: 40px;}
+	.cardsContainer article:first-child .citigoldHomeWrap {border-bottom: 1px solid #ccc;margin-bottom: 40px;}
+	.cardsContainer article:first-child .cardContent{border-right:0;padding-bottom:28px;}
+	.cardsContainer article .cardContent{padding: 0 20px;}
+	.cardsContainer.cont_Landing .landingPara{text-align:left;}		
+	.clientArea:first-child{padding:0 0 35px 0;}
+	.giftSection .headSection{padding: 20px;margin-top: 40px;}
+	.table-sm .tableRow > div{ width:100%; text-align:left;padding: 10px 20px 10px 20px;font-size: 18px;}
+	.table-sm .tableRow > div.thd{font-size:12px;border-bottom: 1px solid #fff;margin: 0 0 10px 0;padding: 10px 20px 0 20px;text-align: left;}
+	.table-sm .table-column{padding:0;background: none;}
+	.table-sm .tableRow{padding:0 0 10px 0;margin:0 0 20px 0;background: #eee;}
+	.table-sm .tableRow .goldTxt {text-align: left;}
+	.table-sm .tableRow:last-child {margin-bottom: 0;}
+	.giftSection h1 {font-size: 28px;line-height: 34px;}
+	.giftSection .headSection h4 {padding-bottom: 10px;}
+	.giftSection .tabs {padding-bottom: 40px;}
+	.cardsContainer h3 {font-size: 20px;}
+	.promo .newThumb .landingPara {padding-bottom: 0;}
+	.footnote {margin-bottom: 30px;}
+	.promo .upArrow li {width: 100%;display: block;float: none;text-align: center;}
+	.promo .upArrow li a {position: relative;display:inline-block;width: auto;}
+	.giftSection .tab-two-column li:after {border: none;} 
+	.middleBlock > div {padding-bottom: 10px;}
+	.hSec h3.subHeading {font-size: 24px;line-height:32px;}
+	.hSec .add-details {font-size: 16px; line-height: 24px;}
+	.giftSection .rowSection h4 {font-size: 16px;line-height: 24px;}
+	.promo .upArrow li a::before {left: 8px;}
+	
+    /* Privileges events */
+    .gray-container h2 {font-size: 26px;line-height: 32px;padding-bottom: 30px;}
+    .three-column {margin-bottom: 35px;}
+    .three-column .clickMore {text-align: left;font-size: 16px;line-height: 24px;margin-bottom: 37px;padding-bottom: 0px;}
+    .three-column .findMore {text-align: left;font-size: 16px;line-height: 24px;margin-bottom: 37px;padding-bottom: 0px;}
+    .two-column {margin-top: 0px;}
+    .gray-container {padding: 27px 20px 38px 20px;}
+    .gray-container p {padding-bottom: 8px;}
+    .rgtImg {line-height: 0px;}
+    .three-column-heading {margin-top: 65px;}
+    .three-column-heading h1.mainHeading {padding: 0 0 17px;}
+    .three-column img {padding-bottom: 9px;}
+    .three-column h3 {margin-bottom: 8px;}
+    .gray-container .findMore {text-align: left;font-size: 16px;line-height: 24px;margin-bottom: 0px;padding-bottom: 0px;}
+    .gray-container h3 {padding-bottom: 0px;}
+    .cols-privy {margin-top: 24px;}
+	
+    /* Privileges lifestyle */
+    .tab-two-column {margin-top: 46px;}
+    .tab-two-column li {font-size: 16px;line-height: 24px;padding: 13px 0;height: auto;width: 50%;}
+    .tab-two-column li.tab-two-column-active {font-size: 16px;line-height: 24px;padding: 16px 0;height: auto;width: 50%;margin-top: -5px;}
+    .mobLifestyle .headSection {margin-top: 30px;}
+    .mobLifestyle .headSection h1 {font-size: 26px;line-height: 32px;}
+    .mobLifestyle .three-column img {padding-bottom: 7px;}
+    .mobLifestyle .three-column h3 {margin-bottom: 0px;}
+    .lightbox-content h1 {font-size: 30px;line-height: 32px;}
+	
+    /* Insights page */
+    .firstVideoContainer {margin-bottom: 80px;}
+    .firstVideoContainer .gray-container {padding: 40px 0;}
+    .firstVideoContainer .findMore {text-align: center;}
+    .videoContainer {margin-bottom: 80px;}
+    .videoContainer .gray-container {padding: 40px 20px;text-align: center;}
+    .ipadPortOnly {margin-top: 0px;}
+    .videoContainer .findMore {text-align: center;}
+    .grayline-box {margin-bottom: 40px;}
+    .insight-headings {margin-top: 38px;}
+    .insights .column-detail {min-height: 0px;}
+	
+    /* Insights - Market outlook */
+    .leftPannelContent {padding: 40px 0 78px 0px;margin: 0;}
+    .leftPannelContent h4.pagetitle {font-size: 12px;line-height: 16px;}
+    .leftPannelContent h2.mainHeading {font-size: 26px;line-height: 32px;}
+    .socialGraylineBar .authorName {font-size: 12px;width: 100%;}
+    .leftPannelContent ul.socialGoldIcon {float: left;width: 100%;margin-top: 10px;}
+    .leftPannelContent ul.socialGoldIcon li:first-child {padding-left: 0px;}
+    .accordiant-inner-content {padding-left: 0px;}
+    .goldBox h3.authorDesc {font-size: 16px;line-height: 24px;}
+    .goldBox {margin-left: 0;width: 100%;}
+    .rightPannelContent {margin: 0;}
+    .rightPannelContent h4.pagetitle {font-size: 16px;line-height: 16px;padding-bottom: 5px;}
+    h2.largeHeading {font-size: 26px !important ;line-height: 32px;}
+	h4.mediumHeading {font-size: 20px;line-height: 28px;}
+	#forElectionVideo.videoContainer .gray-container {padding: 40px 20px;text-align: center;}
+    .three-column-video .headSection {margin-top: 64px;}
+    .three-column-video .three-column {display: inline-block;margin-bottom: 0px;}
+    .three-column-video .three-column-video-list {margin-bottom: 30px;}
+	
+    /* Global advantage */
+    .greenTick {background: url("/views/citigold/images/icons/check_green.png") no-repeat 0px 7px;padding-left: 32px;margin-bottom: 29px;display: inline-block;font-size: 16px;line-height: 24px;}
+    .rightPannelStyle2 .rightPannelInfo .lastTick {margin-bottom: 35px;}
+    .rightPannelStyle2 .rightPannelInfo img {padding-bottom: 33px;width: 100%;}
+    .rightPannelStyle2 .rightPannelInfo .pagetitle {padding: 0px 0 4px 0;}
+    .rightPannelStyle2 .rightPannelInfo .dispfooter-group {text-align: center;}
+    .rightPannelStyle2 .rightPannel {margin: 0px 0 0px;}
+    .rightPannelStyle2 .rightPannelInfo .mainHeading {padding-bottom: 33px;}
+    .rightPannelStyle2 .rightPannelPara {font-size: 16px;line-height: 24px;padding-bottom: 38px;}
+    .rightPannelStyle2 .rightPannelInfo {padding-bottom: 62px;display: inline-block;}
+    .ipadImg {position: relative;margin-top: 0px;}
+    .leftColumn {padding: 60px 55px 70px;}
+    .gray-container-privy {padding: 10px 10px 22px 10px;}
+    .mobSwapSpace {margin-top: 30px;}
+	
+    /* Advisory landing */
+    .advisory-landing .rightPannelInfo p.rightPannelPara {font-size: 16px;line-height: 24px;}
+    .advisory-landing .rightPannelInfo .greenTick {background: url("/views/citigold/images/icons/check_green.png") no-repeat 0px 7px;padding-left: 32px;margin-bottom: 29px;display: inline-block;font-size: 16px;line-height: 24px;}
+    .advisory-landing .rightPannelInfo .lastTick {margin-bottom: 35px;}
+    .advisory-landing .rightPannelInfo img.firstImage {padding-bottom: 30px;}
+    .advisory-landing .rightPannelInfo {padding-bottom: 50px;}
+    .advisory-landing #rightPannel1, .advisory-landing #rightPannel3, .advisory-landing #rightPannel4 {padding-bottom: 34px;}
+	
+    /* Privileges welcome */
+    .rowSection {margin-top: 47px;}
+    /* .rowSection h4.first {padding-bottom: 5px;font-size: 12px;letter-spacing: 2px;line-height: 16px;} */
+    .rowSection h4 {padding-bottom: 5px;font-size: 16px;line-height: 24px;}
+    .leftColumn {padding: 34px 20px 21px;}
+    .content {padding: 6px 20px 16px;width: 100%;}
+    .contentHeading {margin-bottom: 4px;letter-spacing: 1px;}
+    .add-details {font-size: 12px;letter-spacing: 1px;line-height: 16px;}
+    .leftColumn .mainHeading {padding-bottom: 0px;font-size: 42px;letter-spacing: 0px;line-height: 50px;}
+    .add-box h3.subHeading {font-size: 26px;letter-spacing: 0px;line-height: 31px;}
+    .bdrGold h1.mainHeading {font-size: 42px;letter-spacing: 0px;line-height: 50px;}
+    .rightColumn .contentHeading {border-left: 0px !important;padding: 6px;}
+    .content {color: #333333;font-size: 16px;letter-spacing: 0px;line-height: 24px;}
+    .tandc {margin: 0px 0 14px;}
+    .add-box .before {left: 39%;}
+    .add-box {padding: 36px 2px 30px;}
+    .bggray > div {margin-top: -4px;}
+    .lightbox-content {display: initial !important;vertical-align: none !important;}
+    .lightbox-inner {margin: 0% auto !important;}
+    .footerTc li:nth-child(2n) {margin: 0px 0px 0px 0px;}
+    .wtSoution .acc_subTxt {padding-left: 39px;padding-bottom: 29px;}
+    .new_disclaimers, .termsCondtion ol.numLst li, .termsCondtion {font-size: 12px;line-height: 18px;}
+    .wtSoution .tickList ul li {padding: 0px 0px 18px 33px;width: 100%;}
+    .wtSoution .tickList {padding-left: 29px;margin-bottom: 10px;width: 100%;}
+	.wtSoution .tickList.tickColumnLeft {margin-bottom: 0;}
+    .lightbox-body {padding: 45px 0 !important;}
+	
+    /* Your team */
+    .team .headSection {margin-top: 64px;}
+    .team > div {color: #333333;font-size: 16px;letter-spacing: 0px;line-height: 24px;}
+    .team .headSection h1 {padding-bottom: 24px;}
+    .gsc-search-box input.gsc-input {padding-bottom: 14px !important;}
+    .mobContainer2 {display: inherit;}
+	
+    /* Segment comparison */
+    .tableSection > div {color: #333333;font-size: 16px;letter-spacing: 0px;line-height: 24px;}
+    .tab.col2by5 {width: 100%;}
+    .tableTd {width: 100%;}
+    .tableSpacing {margin-bottom: 20px;}
+    .dropDown .col2by5, .tableTd .col2by5 {width: 48%;float: left;font-family: interstate-light, arial;font-size: 16px;line-height: 24px;}
+    .dropDown {display: inline-block;}
+    .tableTr>div {text-align: left;padding-top: 0px;}
+    .tab-accordiant-header.active-state {border-bottom: 0px solid #DDDDDD;display: table !important;}
+    .headerFirst {border-top: 1px solid #000000;}
+    .tab-accordiant-header a {background: url("/views/citigold/images/icons/plus.png") no-repeat scroll 10px 21px transparent;padding: 14px 0px 13px 40px;color: #333333;font-family: interstate, arial;font-size: 16px;line-height: 24px;width: 100%;}
+    .priceItem >div, .color1, .color2, .color3, .color4 {font-size: 16px;line-height: 24px;font-family: interstate, arial;}
+    .tab-accordiant-header.active-state a {font-family: interstate, arial;color: #333333;background: url('/views/citigold/images/icons/minus.png') no-repeat scroll 10px 21px transparent;border-bottom: 0px;background-color: #ffffff;display: inline-block;width: 100%;padding: 14px 0px 13px 40px;}
+    .tableSection {background: #ffffff;margin-top: 30px;margin-bottom: 50px;}
+    .tableSection .rowtable {background: #EEEEEE;}
+    .impTxt {margin-top: 20px;}
+    .tab-accordiant-content {width: 100%;}
+    .priceItem>div, .tableHeader>div, .tableTr {margin-bottom: 0px;}
+    .color1, .color2, .color3, .color4 {padding-left: 40px;}
+    .tableTd .submit-box {margin-bottom: 10px;}
+    .tableTd .learnMore {margin-top: 10px;margin-bottom: 0px;}
+    .dividerSegment {display: inline-block;border-bottom: 1px solid #CCCCCC;margin-bottom: 5px;width: calc(100% - 40px);margin-left: 40px;}
+    .step1, .step2, .step3, .step4, .step5, .step6, .step7, .step8 {height: auto !important;}
+    .colMob {padding: 0 10px;}
+    .contentWrapper .divider {display: none;}
+    .col2by5>p {margin-bottom: 20px;padding-top: 0px;height: auto !important;word-break:break-word;}
+    .homePageSection .insight-headings {margin-top: 38px;}
+	.homePageSection .homePageSection.insight-headings{margin-top:0px !important;}
+    .homePageSection .emailUs .subHeading {padding-bottom: 33px;}
+    .homePageSection .callLine {margin: 0px 0 0px;padding-bottom: 0px;padding-top: 0px;}
+    .homePageSection .emailUs .callLine:nth-child(2) {margin-top: 34px;margin-bottom: 20px;}
+    .homePageSection .emailUs .chatDiv {padding-top: 0px;}
+    .menuBar nav, .menuBar {height: 48px;background: #fff;}
+    .draggable {height: 100% !important;}
+    .tableSpacing .col2by5 {margin-bottom: 3px;}
+    .tableSpacing .col2by5:last-child {margin-bottom: 20px;}
+    .whitebgwithShadow {box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.2);}
+    .errTxt>p, .errTxt h1.mainHeading {padding-bottom: 20px !important;}
+    .errTxt {margin: 50px 0;}
+	.visibleSM{display: none !important;}
+	.circleSection{padding-bottom:70px;}
+	
+	.commonTab .tableTr>div{padding-bottom: 0;padding-top: 0px;}
+	.commonTab .tableBorder {border-top: 0px solid rgba(191,191,191, .5);}
+	.commonTab .dividerSegment {width: 100%;margin-left: 0px;display: table;margin-bottom: 0px;}
+	.commonTab .tableMob{text-align: left;width: 48%;margin-top: 10px;margin-bottom: 10px;padding-left: 0px;}
+	.graph-tab p,.graph-tab  div{font-size: 16px;line-height: 24px;}
+	.commonTab .tab-accordiant-header.active-state{width:100%;}
+	.commonTab .colMob{padding: 0 10px 0px 50px;margin-bottom:10px;}
+	.box-border .center-row{display:table;}
+	.box-border .center-row .center{display:table-cell;}
+	text{font-size:8px !important;}
+	.tab-two-column li:after{height:30px;}
+	.cc-space-top{margin-top:80px;}
+	.graph-tab .three-column {margin-bottom: 0px;}
+	.innerdraggableTab .tab-two-column li,.innerdraggableTab .tab-two-column li.tab-two-column-active{width:250px;}
+	.graph-tab .box-border{font-size: 12px;line-height:16px;}
+	.cc-space-top{margin-top:50px;}
+	.cc-space-bottom{margin-bottom:70px;}
+	.innerdraggableTab {height: 83px;}
+	.margin-top100{margin-top:73px}
+	.mobile-margin-btm20{margin-bottom:20px}
+	.box-border{height:auto !important;}
+	.margin-btm40 {margin-bottom: 23px;}
+	.blockTitle {font-family: interstate-light, arial;font-size:18px;line-height: 24px;color: #333333;}
+	.graph-tab .headerFirst .dropDown {padding-bottom: 0px; }
+	.graph-tab .tableSpacing {margin-bottom: 0px; }
+	.pieContainer{text-align: center;width: 100%;margin: 0px auto;}
+	svg{margin: 0px auto;}
+	.subTitle h2.mainHeading {padding: 0 0 17px;}
+	.mobileTxtCenter{text-align:center;}
+	.headerFirst .tab-accordiant-header a{font-family:interstate, arial;}
+	.citigoldThumbContainer {margin-bottom: 0px;margin-top: 40px;}
+	.leftPannelContent .accordiant-header a {margin-top: 19px;margin-bottom: 19px;}
+	.progressbarbg span {padding: 13px 0px;font-size: 10px;}
+	.link-font > a {font-size: 18px;line-height: 26px;}
+
+	.HomeBanner .findOutBtn {margin-bottom: 15px;}
+	.cg-boxmodel.team-box {padding: 30px;}
+	.team-specialist h2 {border: none;}
+	.team-specialist h4 {border-top: 1px solid #cccccc;}
+	/* .footer-fixed {display: block;} */
+	.footer-fixed.fixed {/* box-shadow: none; */margin-bottom: 20px;}
+	.fixed-links {padding: 20px 0;/* border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;text-align: left; */}
+	 .fixed-links a {margin: 0;}
+	 .fixed-links a:first-child {margin-right: 40px;} 
+	.fixed-links a:last-child {margin-bottom: 0;}		
+	.hide-mobile {display: none;}
+	.padbtm80-mob {padding-bottom: 80px;}
+	.fixed-links a span.link-text, .fixed-links > span span.link-text {padding-top: 12px;}
+	.fixed-links a span.call-text, .fixed-links span.call-text {display: inline-block;padding-top: 12px;display: none;}
+	.mobBorder {border-bottom: 1px solid #666666;}
+	.mobpadding-btm35 {padding-bottom: 35px;}
+	#contactus-form .form-section {padding: 0;}
+	.centres-section {margin-top: 37px; padding-bottom: 50px;}
+	.centre-heading.firstChild {border-top: 1px solid #666666;}
+	.centre-heading {padding: 13px 0 16px;border-bottom: 1px solid #666666;display: inline-block;width: 100%;padding-left: 55px;cursor: pointer;font-size: 16px;}
+	.centre-heading:before {content: '';background-image: url(/views/citigold/images/icons/carat_down_black.png); position: absolute;left: 30px;top: 18px;    float: left;width: 15px;height: 8px;transition: all 600ms ease;}
+	.centre-heading.activeCentre:before {transform: rotate(180deg);-moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);}
+	.centre-heading {font: 400 16px/16px interstate-light, arial;}
+	.centre-heading.activeCentre {font: 400 16px/16px interstate, arial;border-bottom: none;/*padding-bottom: 5px;*/}
+	.centres-section .centre-content {display: none;}
+	.centres-section p {font-size: 16px; border-bottom: 1px solid #333333;padding: 0 0 10px 55px; line-height: 30px;margin-top: -9px;opacity:0}
+	.hero_banner_cta .row-height .col-height {display: block;float: left;width: 100%;height: auto;}
+	.white-card {background-color: rgba(255,255,255,1);}
+	.bannerTxt.hero_banner_cta {margin: -11.4% auto 1%;}
+	.hero_banner_cta .content-wrap {margin: 0;padding: 0;}
+	.hero_banner_cta .content-wrap.cta-wrap {margin:20px;padding:10px 0;}
+	.pageBanner .hero_banner_cta .pagetitle {padding: 23px 0 12px 0;font-size: 42px;line-height: 50px;}
+	.footer-bar {padding: 15px 10px; line-height: 24px; font-size: 16px;}
+	#contactus-form  .submit-box {margin-bottom: 40px;}
+	/* .fixed-links a span.call-text {display: none;} */
+	.errorCode, .errorCode2 {height: auto;}
+
+	/* Promotion Slider */
+	.leftColumn.pad-lft-clm {padding: 40px 30px 40px;}
+	.range-slider {width: 100%;}
+	.findOutBtn {line-height: 54px;}
+	#applynow-form .submit-box { margin-bottom: 0;}
+	#applynow-form .form-section {padding: 33px 0 60px 0;}
+	#applynow-form .form-toplable {padding-bottom: 33px;}
+	.footerInfo .mobRow .col-md-3 {width: 100%;}
+	.qr-code {width: 120px;margin: 40px auto 0;float: left;}
+	/* .bestTime .radio-label {font-size: 16px;} */
+	.select-row > span {display: block;margin-bottom: 10px;}
+	.bestTime .select-row {padding-left: 0;margin-bottom: 20px;}
+	.select-row .from-row, .select-row .to-row {display: block;margin-bottom: 15px;}
+	/* .bestTime select {width: 85px;} */
+	.from-row > span, .to-row > span {width: 50px;display: inline-block;}
+	.select-row .from-row {margin-right: 0;}
+	.bestTimeForm .textAreaBox {height: 140px;}
+	#weekdays {margin-bottom: 20px;}
+	.bestTime .select-row .inputField {margin-bottom: 20px;}
+	.bestTime .select-row .inputField:nth-child(2) {margin-bottom: 0;}
+	.gsc-results-wrapper-overlay {left: 0 !important;margin: 0 30px !important;width: auto !important;}
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+    .add-box .before {left: 44%;}
+	/* .new-subheading {line-height: 2.2vw;} */
+}
+
+@media (max-width: 500px) {
+	.tableRow, .tableRow .goldTxt {font: 20px/26px interstate-light, arial;}
+}
+
+@media (max-width: 450px) {
+	.rgtImgVideo div {height: 192px;}
+	.gsc-table-cell-thumbnail {width:50% !important;}
+    .draggable-container.col-sm-10 {width: 73.66666667%;}
+	#privilegesThumbImg5 {background-size: cover;}
+	.tableRow,.tableRow .goldTxt {font: 16px/21px interstate-light, arial;}
+}
+
+@media (max-width: 736px) {
+    .funds-row .setHeight {height: auto;}
+    .limelight-player-footprint, .LimelightEmbeddedPlayerFlash {height: 401px !important;width: 100% !important;}
+}
+
+@media (max-width: 667px) {
+	.videoSection div {height: 383px;}
+}
+
+@media (max-width: 568px) {
+	.thumpContainerVideo div {height: 252px;}
+	.videoSection div {height: 315px;}
+	.new-subheading{line-height: 20px;}
+}
+
+@media (max-width: 480px) {
+	.thumpContainerVideo div {height: 211px;}
+	.videoSection div {height: 260px;}
+	.circle__content .circleCenter .new-font {display: none;}
+    .circle__content .circleCenter .new-line {display: none;}
+    .circle__content .circleCenter .new-subheading {display: none;top: 10px;padding: 0 12px;line-height: 16px;font-size: 2.5vw;}
+	.visibleXSM {display: block!important;font-size: 3.8vw;}
+	.visibleExceptXSM {display: none;}
+	.funds-row .arrow {right: 47%;}
+	.innerdraggableTab .tab-two-column li,.innerdraggableTab .tab-two-column li.tab-two-column-active{width:190px;}
+	.fixed-links a {font-size: 16px;}
+	.fixed-links a:first-child {margin-right: 10px;} 
+	.fixed-links a img {width: 40px;height: auto;}
+	.fixed-links a span.link-text {padding-top: 7px;}
+}
+
+@media (max-width: 440px) {
+	.giftSection .tab-two-column li.tab-two-column-active{height:90px;margin-top: -10px;}
+	.giftSection .tab-two-column li{height:70px;padding: 13px 0;display: table;}
+	.giftSection .tab-two-column li a {display: table-cell;vertical-align:middle;}
+}
+
+@media (max-width: 414px) {
+	.thumpContainerVideo div {height: 160px;}
+    .rgtImg .sidevideo-wrapper, .rgtImg .sidevideo-wrapper div {/* height: 180px;*/}
+    .videoSection div {height: 237px;}
+	.dropdown-menu {max-height: 296px;}
+	.bestTime-radio .radio-label {font-size: 13px;}
+}
+
+@media (max-width: 370px) {
+	.bestTime-radio .radio-label {font-size: 12px;}
+}
+
+@media (max-width: 375px) {
+	.gsc-table-cell-thumbnail {width: 100% !important;}
+	.videoSection div {height: 203px;}
+	.callLine .verticalFix {padding-top: 3px;font-size: 14px;line-height: 18px;}
+	.graph-tab  svg{width: 76%;}
+	.gsc-table-cell-thumbnail, .gsc-table-cell-snippet-close, .gsc-table-cell-snippet-open {width: 100% !important;float: left;}
+}
+
+@media (max-width: 320px) {
+	.videoSection div {height: 184px;}
+	.tableRow, .tableRow .goldTxt {font: 14px/21px interstate-light, arial;}
+	.accordiant-header {font-size: 16px;}
+	/* .callIcon {padding-right: 9px;} */
+    .content {padding: 16px 22px}
+    .callLine .verticalFix {padding-top: 3px;font-size: 12px;line-height: 18px;}
+	.whitebgwithShadow{width: 100px !important;}
+	.visible320 {display:block !important;}
+	.graph-tab  svg{width:100%}
+	.progressbarbg span {padding: 13px 0px;font-size: 8px;}
+}
+
+@media (max-width: 319px) {
+    .socialIcon ul>li {padding-left: 40px}
+}
+
+/* *******************************************
+    PREVENT PHONE NUMBERS FROM WRAPPING
+******************************************* */
+.nobreakspace {white-space: nowrap;}
+
+/* *******************************************
+    NUMBER LIST SHOULD BE USING A MONO TYPE FONT
+    TO ALIGHT PROPERLY
+******************************************* */
+ol li, .numLst li {font-family: 'ddl-interstate-light', arial;}
+.dropdown-menu a:hover {color: #B4975A !important;}
+
+/* *******************************************
+    WORKING ON THE CUSTOM CSS OF GOOGLE SEARCH
+******************************************* */
+.gssb_c {border: none;margin-top: -3px;margin-left: 9px;box-shadow: none;-webkit-box-shadow: none;}
+.gssb_e .gsc-completion-container {border: none;background: white;font-size: 16px !important;font-family: interstate-light, arial;letter-spacing: 0.02em;margin-left: -100px;box-shadow: none;-webkit-box-shadow: none;}
+.gsq_a table td {font-family: interstate-light, arial;}
+.gsq_a table td span {font-weight: bold;color: #333333;}
+.gsq_a table td span b {color: #999999;}
+.gsc-orderby {display: none;}
+.gsc-above-wrapper-area {border-bottom: 0px solid #E9E9E9 !important;}
+.gsc-cursor-page {color: #B4975A !important;}
+.gsc-table-cell-thumbnail {/* width: 0% !important;*/}
+
+/* *******************************************
+    CREATE A BEFORE
+******************************************* */
+.upArrow li a.grayArrow::before {content: '';position: absolute;display: block;width: 15px;height: 8px;left: 10px;top: 18px;background-image: url('/views/citigold/images/icons/carat_grey.png');transition: all 600ms ease;}
+.upArrow li a.grayArrow.activeDisclaimer::before {transform: rotate(180deg);-moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);}
+.accordiant-header .upArrow li a.goldArrow::before {content: '';position: absolute;display: block;width: 15px;height: 8px;left: 20px;top: 18px;background-image: url('/views/citigold/images/icons/carat_grey.png');transition: all 600ms ease;}
+.accordiant-header .upArrow li a.goldArrow.activeDisclaimer::before {transform: rotate(180deg);-moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);}
+#preferential .grayArrow::before {left: 0px !important;}
+.rightPannelStyle2 .upArrow li a::before {content: '';position: absolute;display: block;width: 15px;height: 8px;left: 10px;top: 18px;background-image: url('/views/citigold/images/icons/carat_grey.png');transition: all 600ms ease;}
+.rightPannelStyle2 .upArrow li a.activeDisclaimer::before {transform: rotate(180deg);-moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);}
+.click-disclaimer li a.goldArrow::before {content: '';position: absolute;display: block;width: 15px;height: 8px;left: 9px;background-image: url('/views/citigold/images/icons/carat_grey.png');transition: all 600ms ease;}
+.click-disclaimer li a.goldArrow.activeDisclaimer::before {transform: rotate(180deg);-moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);}
+.lightBoxTxt .click-disclaimer li a.goldArrow::before {content: '';position: absolute;display: block;width: 15px;height: 8px;left: 0px;background-image: url('/views/citigold/images/icons/carat_grey.png');transition: all 600ms ease;top: 18px;}
+.leftPannelContent .accordiant-header a::before {content: '';position: absolute;display: block;width: 15px;height: 8px;left: 10px;top: 8px;background-image: url("/views/citigold/images/icons/carat_gold.png");transition: all 600ms ease;}
+.leftPannelContent .accordiant-header.active-state a::before {transform: rotate(180deg);-moz-transform: rotate(180deg);-webkit-transform: rotate(180deg);-o-transform: rotate(180deg);-ms-transform: rotate(180deg);}
+
+/* *******************************************
+    SLOW ZOOM CSS FROM IMAGES
+    TRIGGERED VIA ADDING CLASS BY JAVASCRIPT
+******************************************* */
+.sidephoto-wrapper {width: 100%;height: 100%;overflow: hidden;}
+.sidephoto-wrapper > div {background-position: center;transition: all 10200ms ease;-moz-transition: all 10200ms ease;-ms-transition: all 10200ms ease;-webkit-transition: transform 10200ms ease;-o-transition: all 10200ms ease;}
+.sidephoto-wrapper > div.slowzoom {transform: scale(1.1);-moz-transform: scale(1.1);-webkit-transform: scale(1.1);-o-transform: scale(1.1);-ms-transform: scale(1.1);}
+
+/* *******************************************
+    PREVENT PHONE NUMBERS FROM WRAPPING
+******************************************* */
+.whitebgwithShadow {display: inline-block;background-color: white;margin-right: -20px !important;width: 110px;text-align: center;}
+.fixedoverflow {width: 0px;}
+#stickyAnimation {-webkit-transform: translate3d(0,0,0);}
+
+/* ********************************************************* 
+
+********************* START OF CHANGES *********************
+
+********************************************************* */
+#citigoldhomeImg1 {
+    transform: translateZ(0);
+    transform: translate3d(0,0,0);
+    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
+}
+
+/* *******************************************
+    FIXING THE CIRCLES
+******************************************* */
+#circleAnimationLock {
+    transform: translateZ(0);
+    transform: translate3d(0,0,0);
+    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
+/*    background-color: darkgoldenrod;*/
+}
+#mobileCircleWrapper {
+    transform: translateZ(0);
+    transform: translate3d(0,0,0);
+    -webkit-transform: translateZ(0);
+    -webkit-transform: translate3d(0,0,0);
+    padding-bottom: 40px;
+/*    background-color: aqua;*/
+}
+#mobileCircleWrapper .mobileCircleContainer {margin: 0 auto;height: 367px;width: 240px;}
+.mobileCirclePadding {width: 240px;height: 240px;padding: 0px;position: absolute;border-radius: 50%;background-color: white;}
+#circle0 {z-index: 50;top: 0px;}
+#circle1 {z-index: 40;top: 10px;}
+#circle2 {z-index: 30;top: 20px;}
+#circle3 {z-index: 20;top: 30px;}
+.mobileOpacityContainer {width: 240px;height: 240px;padding: 0px;position: absolute;display: block;background-color: transparent;color: #222;text-align: center;border-radius: 50%;box-shadow: 3px 3px 5px #ccc inset;background-color: white;opacity: 0.5;}
+.mobileOpacityContainer:after {position: absolute;display: block;padding-bottom: 100%;width: 100%;height: 100%;content: "";border-radius: 50%;border: solid 2px #B4975A;box-shadow: 2px 2px 5px #ccc;}
+.new-mobilecircle {
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.new-mobilecircle .new-font {
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    font-size: 26px;
+    width: 100%;
+    top: 75px;
+    left: 0%;
+}
+.new-mobilecircle .new-subheading {position: absolute;font-size: 16px;padding: 0 40px;left: 0%;top: 135px;text-align: center;width: 100%;}
+#caretHolder {position: relative;margin: 0 auto;width: 30px;}
+#caretHolder .caret {position: absolute;top: 60px;width: 30px;height: 30px;}
+.caret::after { 
+    position: absolute;
+    display: block;
+    content: "";
+    width: 30px;
+    height: 16px;
+    background-image: url('/views/citigold/images/carat_down_gold.png');
+    -webkit-animation: arrowmoves 400ms infinite; /* Safari 4+ */
+    -moz-animation: arrowmoves 400ms infinite; /* Fx 5+ */
+    -o-animation: arrowmoves 400ms infinite; /* Opera 12+ */
+    animation: arrowmoves 400ms infinite; /* IE 10+, Fx 29+ */
+    -webkit-animation-direction: alternate;
+    -moz-animation-direction: alternate;
+    -o-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes arrowmoves {
+    from {top: 0px;}
+    to {top: 10px;}
+} 
+@-moz-keyframes arrowmoves {
+    from {top: 0px;}
+    to {top: 10px;}
+}
+@-o-keyframes arrowmoves {
+    from {top: 0px;}
+    to {top: 10px;}
+}
+@keyframes arrowmoves {
+    from {top: 0px;}
+    to {top: 10px;}
+}
+/* ********************************************************* 
+
+********************* END OF CHANGES *********************
+
+********************************************************* */
+
+
+/* For Chinese language START */
+.chinese .tickList strong, .chinese .disclimer, .chinese .plans-block-content h3, .chinese .gray-container h3, .chinese .three-column h3,.chinese .greenTick h3, .chinese .priceItem .mobTxtRight, .chinese .cg-boxmodel p, .chinese .tab-accordiant-header a,.chinese .tab-accordiant-header.active-state a, .chinese .logInbtn a, .chinese .accordiant-content .acc_subTxt a.learnMore, .chinese .priceItem>div, .chinese .findOutBtn, .chinese ol li, .chinese .numLst li {
+	font-family: Microsoft YaHei, arial;
+	font-weight: bold;
+}
+
+body.chinese, .chinese .gsc-search-box input.gsc-input, .chinese .errTxt>p, .chinese .form-section .textAreaBox, .chinese .tickList h3, .chinese .leftPannelContent h3.blackHeading, .chinese .leftPannelContent h3.goldHeading, .chinese .leftPannelContent .accordiant-header.active-state a, .chinese .tableHead, .chinese .tableRow, .chinese .tableRow .goldTxt, .chinese .tableHeader, .chinese .dropMenu, .chinese h4.paraHeading, .chinese .commonTab  .dropMenu>a, .chinese .blockTitle, .chinese .tRow .tCell.tHead, .chinese .tRow .tCell, .chinese .gssb_e .gsc-completion-container, .chinese .gsq_a table td, .chinese .topMenu ul.lang-switch li >a, .chinese .fixed-links a:last-child .link-text  {
+	font-family: Microsoft YaHei, arial;
+}
+
+.chinese .disclimer, .chinese #applynow-form  .disclimer, .chinese .rightPannelStyle2 ol.numLst li, .chinese .footnote ol.numLst li, .chinese .rightPannelStyle2 .upArrow li a.activeDisclaimer, .chinese .footnote .upArrow li a.activeDisclaimer, .chinese .rightPannelStyle2 .new_disclaimers p, .chinese .termsCondtion ol, .chinese .new_disclaimers p, .chinese .tandc, .chinese .new_disclaimers ol.numLst li ul.lower-alpha li, .chinese .rightPannelStyle2 .upArrow li a, .chinese .footnote .upArrow li a, .chinese .upArrow li a, .chinese .disclaimer, .chinese .new_disclaimers ol.numLst li > ul  > li {font-size: 12px !important;}
+
+.chinese .fontBold, .chinese a.fontIntBold, .chinese .fontInBold, .chinese .logInbtn a, .chinese .footer-heading, .chinese .btnStyle, .chinese .accordiant-header.active-state div a, .chinese .accordiant-content .acc_subTxt a.learnMore, .chinese .clickMore, .chinese .findMore, .chinese .tandc, .chinese .fourColumn h3, .chinese .dropMenu>a  {
+	font-family: Microsoft YaHei, arial;
+	font-weight: bold;
+}
+
+@media (max-width: 767px) {
+	.chinese .dropDown .col2by5, .chinese .tableTd .col2by5 {font-family: Microsoft YaHei, arial;}
+}
+/* Chinese language END */

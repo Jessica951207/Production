@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>花旗银行（中国）</title>
+<style type="text/css">
+*{padding: 0;margin: 0;}
+table{border-collapse: collapse;border-spacing: 0;border: none;}
+.text_input,.select_input{border-radius:0;appearance:none;-webkit-appearance:none;}
+.fixed:after {content: '.';display: block;height: 0;clear: both;font-size: 0;}
+.fixed{*zoom: 1;}
+.container{width: 100%;max-width: 750px;margin: 0 auto;position: relative;}
+.header{background: url(images/header_bg.jpg) repeat-x center center;padding: 3% 4%;}
+.header #logo{display: block;width: 12%;float: right;}
+.content{padding: 0% 5% 0 5%;}
+.title{background: url(images/title_bg.jpg) repeat-y center center;background-size: 100%;color: #fff;text-align: center;padding: 5px 0;font-size: 16px;}
+#rform{padding: 3% 0 0;font-size: 16px;color: #595757;line-height: 120%;}
+#rform .text_input{width: 100%;border: 1px solid #ccc;padding: 10px;font-size: 14px;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+#rform .select_input{width: 100%;height: 100%;border: none;height: 33px;padding-left: 10px;font-size: 14px;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;border: none;position: absolute;top: 0;left: 0;opacity: 0;}
+#rform .select_div{width: 100%;border: 1px solid #ccc;height: 35px;padding: 8px 0;font-size: 14px;background: url(images/inputarrow.jpg) no-repeat center right;background-size: auto 100%;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;position: relative;}
+#rform .select_div .selpanel{width: 100%;padding-left: 10px;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+#rform .sub-title{color: #004785;padding: 3% 0;}
+#rform .table_1{width: 100%; margin-top: 0%}
+#rform .table_1 td{padding-bottom: 3%;}
+#rform .table_1 td:first-child{width: 98px;}
+#rform .table_2{margin-top: 2%;font-size: 12px;}
+#rform .table_2 td{vertical-align: top;}
+#rform .table_3{width: 750px;position: fixed;bottom: 0;left: 50%; margin-left: -375px;}
+#rform .table_3 td{width:50%;}
+#rform .table_3 td .btn{outline:none;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;border-left: none !important;border-right: none !important;color:#fff; background-color:#1bbdee; font-size:18px; padding:6% 0;appearance:none;-webkit-appearance:none;border-radius:0;width: 100%;margin: 0 auto;display: block;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;display:block;}
+#rform .table_3 td .btn2{background-color:#fff;color:#1bbdee;}
+#rform .error{color: red;font-size:12px;}
+.tnc_outer{display: none;font-size: 13px;line-height: 180%;color: #595757;width: 70%;padding: 5%;position: absolute;left: 10%;top: 10%;background: #fff;border: 5px solid #1bbdee;z-index: 2;}
+.tnc_outer table td{vertical-align: top;}
+.close_btn{display: block;position: absolute;top: -15px;right: -15px;}
+.mask{position: absolute;top: 0;left: 0;width: 100%;background: #000;opacity: 0.5;display: none;z-index: 1;}
+
+	@media screen and (max-width: 750px){
+		#rform .table_3{width: 100%;position: fixed;bottom: 0;left: 0; margin-left: 0;}
+	}
+
+</style>
+<div style="display:none"><img src="/CNGCB/JPS/portal/KeepAlive.do"></div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+
+	
+
+	<!-- Start XSS.txt -->
+	<script type="text/javascript">
+		window.onload = new function(){
+			var url=location.href;
+			var value1=url.search('iframe');
+			var value2=url.search('script');
+			var splChars = '!$^*+()%[]\\\';@{}|\"<>`~';
+			if((value1!= -1)||(value2!= -1))
+			{
+				//window.top.location.href="https:// <https:///> "+location.host+"/global_docs/citith_home_th.htm";
+				window.top.location.href="https://www.citibank.com.cn/sim/index.htm";
+				// Home page url
+			}
+			url=url.replace(/%20/g," ");
+			for (var i = 0; i < url.length; i++)
+			{
+				if (splChars.indexOf(url.charAt(i)) != -1)
+				{
+					//window.top.location.href="https:// <https:///> "+location.host+"/global_docs/citith_home_th.htm"; // Home page url
+					window.top.location.href="https://www.citibank.com.cn/sim/index.htm";
+				}
+			}
+		};
+
+	</script>
+	<!-- End XSS.txt -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+	update_subject();
+    update_code();
+    update_ecid();
+
+    $('#rform .select_input').each(function(index){
+    	$(this).change(function(){
+    		var seltext = $(this).find('option:selected').text();
+    		$(this).closest('.select_div').find('.selpanel').text(seltext);
+    	})
+    })
+
+    var deviceHeight = $(window).height();
+    var objHeight = $('.tnc_outer').height();
+    
+    $('.tnc_outer').css('top',deviceHeight/2-objHeight/2);
+    $('.mask').height(deviceHeight);
+
+    $('.tnc_btn').bind('click',function(){
+    	$('.mask').fadeIn();
+    	$('.tnc_outer').fadeIn();
+    })
+
+    $('.close_btn').bind('click',function(){
+    	$('.tnc_outer').fadeOut();
+    	$('.mask').fadeOut();
+    })
+
+})
+
+function checkform(index) {
+	var cansub = true;
+	$('form#rform').find(':text,select,:checkbox,input[type="tel"]').each(function(i) {
+		if($.trim($(this).val()) == '') {
+			if ($(this).data('tdindex') != null)
+				$(this).closest('tr').next().find('.error').eq(parseInt($(this).data('tdindex'))).html($(this).data('empty'));
+			else
+				$(this).closest('tr').next().find('.error').html($(this).data('empty'));
+			cansub = false;
+		}else if ($(this).is(':radio')){
+		 	if($(':radio[name="' + $(this).attr('name') + '"]:checked').length <= 0) {
+               $(this).closest('tr').next().find('.error').html($(this).data('empty'));
+			   cansub = false;   
+			}else{
+				$(this).closest('tr').next().find('.error').html('');
+			}
+		}else if ($(this).is(':checkbox')){
+		 	if($(':checked[name="' + $(this).attr('name') + '"]:checked').length <= 0) {
+               $(this).closest('table').find('.error').html($(this).data('empty'));
+			   cansub = false;   
+			}else{
+				$(this).closest('table').find('.error').html('');
+			}
+		}else if(i == 0 && !/^[a-zA-Z\s\u4E00-\u9FA50-9]+$/.test($(this).val())){
+			$(this).closest('tr').next().find('.error').html('请填写正确的姓名').
+			cansub = false;
+		}else if(i == 1  && !/^(13|14|15|17|18)\d{9}/.test($(this).val())) {
+			$(this).closest('tr').next().find('.error').html('请填写正确的手机号码');
+			cansub = false;
+		}else{
+			if ($(this).data('tdindex') != null)
+				$(this).closest('tr').next().find('.error').eq(parseInt($(this).data('tdindex'))).html('');
+			else
+				$(this).closest('tr').next().find('.error').html('');
+		}
+		if (index == i) {cansub = false;return false;}; 
+	});
+
+	if(cansub==true)
+	{
+		SC_Code_Thank_Function();
+	}
+
+	return cansub;
+}
+
+function gup(name) {
+    name = name.replace(/[\[]/, '\\\[').replace(/[\]]/, '\\\]');
+    var regexS = '[\\?&]' + name + '=([^&#]*)';
+    var regex = new RegExp(regexS);
+    var results = regex.exec(window.location.href);
+    if (results == null) return '';
+    else return results[1];
+}
+
+function update_subject() {
+    get_subject = gup('subject');
+    if (get_subject != '') document.rform.subject.value = get_subject;
+}
+        
+function update_code() {
+    get_code = gup('code');
+    if (get_code != '') document.rform.code.value = get_code;
+}
+
+function update_ecid() {
+	get_ecid = gup('ecid');
+	if (get_ecid != '') document.rform.ecid.value = get_ecid;
+}
+
+function empty(){
+	$('.error').html('');
+	$('#rform .selpanel').each(function(index){
+		$(this).text($(this).data('text'));
+	})
+}
+
+</script>
+<!--redirect to https-->
+<!--<script language="JavaScript" type="text/JavaScript">
+function redirect(){ 
+var loc = location.href.split(':'); 
+if(loc[0]=='http'){ 
+location.href='https:'+loc[1]; 
+} 
+} 
+redirect();
+</script>-->
+<!--end -->
+<!--VA Check -->
+<style>
+html{
+display : none ;
+visibility : hidden ;
+}
+</style>
+<script>
+if( self == top ) {
+document.documentElement.style.display = 'block' ;
+document.documentElement.style.visibility = 'visible' ;
+} else {
+top.location = self.location ;
+}
+</script>
+<!--end VA -->
+</head>
+<body>
+<div class="container">
+	<img src="images/logo.jpg" width="100%" style="display:block;" />
+	<div class="content">
+		<form name="rform" id="rform" method="post" action="https://uat.onlinebanking.citi.com.cn/CNGCB/apfa/genfm/ProcessForm.do" onsubmit="return checkform()" autocomplete="off">
+			<input type="hidden" value="https://www.citibank.com.cn/CNGCB/apfa/genfm/ProcessForm.do" name="action_url">
+			<div class="sub-title">您的联系信息</div>
+			<INPUT type="hidden" id="_paramOrder" name="_paramOrder" value="code,flg,gender,name,phone,city,product,ecid" />
+			<INPUT type="hidden" id="_paramAlias" name="_paramAlias" value="code,flg,gender,name,phone,city,product,ecid" />
+
+
+            <input type="hidden" id="isThankYouPage" name="isThankYouPage" value="true"/>
+			<input type="hidden" name="subject" id="subject" value="Banking MGM WeChat" />
+            <input type="hidden" name="code" id="code" value=""/>
+            <input type="hidden" name="ecid" id="ecid" value=""/>
+			<table class="table_1">
+				<colgroup>
+					<col width="50%" />
+					<col width="50%" />
+				</colgroup>
+				<tr>
+					<td colspan="2"><input type="text" name="name" class="text_input" value="" placeholder="姓名" data-empty="请输入姓名" onBlur="checkform(0);" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="error"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="tel" name="phone" class="text_input" value="" placeholder="手机号码" data-empty="请输入手机号码" onBlur="checkform(1);" maxlength="11" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" class="error"></td>
+				</tr>
+				<tr>
+					<td>
+						<div class="select_div">
+							<div class="selpanel" data-text="性别">性别</div>
+							<select name="gender" class="select_input" data-empty="请选择性别" data-tdindex="0" onchange="checkform(2);">
+								<option value="">性别</option>
+								<option value="m">先生</option>
+								<option value="f">女士</option>
+							</select>
+						</div><!--end select_div-->
+					</td>
+					<td style="padding-left:4%;">
+						<div class="select_div">
+							<div class="selpanel" data-text="城市">城市</div>
+							<select name="city" class="select_input" data-empty="请选择城市" data-tdindex="1" onchange="checkform(3);">
+								<option value="">城市</option>	
+								<option value="上海">上海</option>
+								<option value="北京">北京</option>
+								<option value="天津">天津</option>
+								<option value="广州">广州</option>
+								<option value="深圳">深圳</option>
+								<option value="成都">成都</option>
+								<option value="重庆">重庆</option>
+								<option value="长沙">长沙</option>
+								<option value="大连">大连</option>
+								<option value="贵阳">贵阳</option>
+								<option value="杭州">杭州</option>
+								<option value="南京">南京</option>
+								<option value="无锡">无锡</option>
+							</select>
+						</div><!--end select_div-->
+					</td>
+				</tr>
+				<tr>
+					<td class="error"></td>
+					<td class="error" style="padding-left:4%;"></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<div class="select_div">
+							<div class="selpanel" data-text="感兴趣的产品">感兴趣的产品</div>
+							<select name="product" class="select_input" data-empty="请选择感兴趣的产品" onchange="checkform(4);">
+								<option value="">感兴趣的产品</option>	
+								<option value="bx">保险</option>
+								<option value="fd">房贷</option>
+								<option value="lc">理财</option>
+								<option value="qt">其他</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td  colspan="2" class="error"></td>
+				</tr>
+			</table>
+			<table class="table_2">
+				<tr>
+					<td width="20"><input name="chk_agree" id="chk_agree" value="on" type="checkbox" onclick="checkform(5);" data-empty="请确认声明"></td>
+					<td><u class="tnc_btn">本人声明<u></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="error"></td>
+				</tr>
+			</table>
+			<table class="table_3">
+				<tr>
+					<td><input type="reset" value="重设" id="reset_btn" class="btn btn2" onclick="empty();"></td>
+					<td><input type="submit" value="提交" id="submit_btn" class="btn"></td>
+				</tr>
+			</table>
+		</form>
+		<div class="tnc_outer">
+			<img src="images/fancy_close.png" class="close_btn">
+			<table>
+				<tr>
+					<td>1.</td>
+					<td>本人授权贵行使用该等信息，贵行可据之与本人直接联系。</td>
+				</tr>
+				<tr>
+					<td height="10"></td>
+				</tr>
+				<tr>
+					<td>2.</td>
+					<td>贵行可向本人提供银行的金融产品和服务(包括各类存款、贷款产品、银行卡、理财产品、银行代销的产品)以及银行的市场活动讯息。银行将遵循银行信息保护政策保护客户信息。花旗24小时服务热线400-821-1880。</td>
+				</tr>
+				<tr>
+					<td height="10"></td>
+				</tr>
+				<tr>
+					<td>3.</td>
+					<td>本人确认贵行已向本人提供了本次活动的活动细则，本人已经阅读并理解其全部条件和条款。本人对本联系表的签署将构成本人对该等条件和条款的接受。</td>
+				</tr>
+			</table>
+		</div><!--end tnc_outer-->
+	</div><!--end content-->
+</div><!--end container-->
+<div class="mask"></div>
+
+<!--SC_Code.js-->
+<script type="text/javascript" src="/sim/ICARD/forms/PMsf/js/SC_jquery.cookie.js"></script>
+<script type="text/javascript" src="/sim/chinese/js/SC_code1.js"></script>
+<!--Page_Code.js-->
+<script type="text/javascript">
+
+	s.events="event12";
+	s.eVar17="MG - Wechat Contact Information";
+
+	var PageName;
+	$(function(){
+		PageName=s.pageName;
+	})
+
+	var AbandonedField="";
+	var whileSubmit=0;
+	$("input,select").focusin(function(){
+		AbandonedField = $(this).attr("name");
+	})
+	$("body").on("change", "select", function(){
+		AbandonedField = $(this).attr("name");
+	});
+
+	window.onbeforeunload = function () {
+		if(whileSubmit!=1){
+			s.linkTrackVars='prop25';
+			s.linkTrackEvents="" ;
+			s.events = "";
+			if(AbandonedField!="")
+				s.prop25=PageName+':'+ AbandonedField;
+			else
+				s.prop25=PageName+':No Data Entered';
+			s.tl(this,'o','Form Abandonment');
+		}
+	};
+
+	function SC_Code_Thank_Function(){
+		s.linkTrackVars='products,eVar17,events,eVar2,eVar47';
+		$.cookie.json=true;
+
+		if ($('.select_input[name=product] option:selected').val()=='bx'){
+			ProductVar='MG - Insurance';
+		}else if ($('.select_input[name=product] option:selected').val()=='fd'){
+			ProductVar='MG - Mortgage';
+		}else if ($('.select_input[name=product] option:selected').val()=='lc'){
+			ProductVar='MG - Conduct financial transactions';
+		}else if ($('.select_input[name=product] option:selected').val()=='qt'){
+			ProductVar='MG - other';
+		}
+		$.cookie('ThankyoupageUrl', "Thanyou.htm Page URL without Domain");
+		$.cookie('Selected_CreditCard', {product:ProductVar,event:"event13",eVar17:"MG - Wechat Contact Information"});
+		s.products= ";"+ProductVar;
+		s.linkTrackEvents='event26';
+		s.events="event26";
+		s.tl(this,'o','Submit Button Click');
+		whileSubmit=1;
+	}
+
+</script>
+<script type="text/javascript" src="/sim/chinese/js/page_code.js"></script>
+
+
+
+</body>
+</html>
