@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  background: #ededed;
+}
+img {
+  display: block;
+  border: none;
+}
+a {
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+#footer {
+  margin-top: 30px;
+  background: #fff;
+}
+#out_box {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, Microsoft YaHei, sans-serif;
+}
+.visible_mb {
+  display: none;
+}
+.clear {
+  clear: both;
+}
+#header {
+  width: 100%;
+  height: 85px;
+  background: url(../images/headbg.jpg) top left repeat-x;
+}
+.maxbox {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+#mb_header {
+  width: 100%;
+}
+#header .maxbox {
+  position: relative;
+  max-width: 1145px;
+}
+#header .maxbox img {
+  position: absolute;
+  left: 0;
+  top: 16px;
+  z-index: 1;
+}
+#banner_box {
+  margin-top: 25px;
+}
+.banner_out {
+  width: 100%;
+  overflow: hidden;
+  background: url(../images/rce_revamp_04.jpg) center left repeat-x;
+  position: relative;
+}
+.banner_out img {
+  float: left;
+  width: 45%;
+}
+.banner_out .banner_intro {
+  width: 52%;
+  padding-left: 3%;
+  padding-top: 5%;
+  float: left;
+  position: relative;
+}
+.banner_out .banner_intro h1 {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: normal;
+}
+.banner_out .banner_intro p {
+  margin-top: 5%;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0 !important;
+  line-height: 140% !important;
+}
+.banner_out .banner_intro .slogan_box {
+  width: 96%;
+  height: 7.6rem;
+  position: absolute;
+  top: 0;
+  right: 4%;
+}
+.banner_out .banner_intro .slogan_box img {
+  float: right;
+  width: 16%;
+  margin-top: 2.5%;
+}
+.banner_out .banner_intro .slogan_box div {
+  font-size: 0.6rem;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: -23%;
+}
+#content_box {
+  width: 100%;
+}
+#content_box .maxbox {
+  max-width: 1050px;
+}
+#middle_slogan {
+  font-size: 0.8rem;
+  margin: 2% auto;
+  text-align: center;
+  color: #5b5b5b;
+  line-height: 140%;
+}
+#card_list {
+  list-style: none;
+  width: 100%;
+  margin-top: 3%;
+}
+#card_list .card_display {
+  float: left;
+  width: 45%;
+  margin-left: 8%;
+  background: #fff;
+  border: solid 1px #ccc;
+  box-shadow: 2px 2px 5px #ccc;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  position: relative;
+}
+#card_list .card_display:nth-child(1) {
+  margin-left: -1%;
+}
+#card_list .card_display .card_face {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: -65px;
+}
+#card_list .card_display .card_name {
+  font-size: 0.9rem;
+  color: #0074c3;
+  font-weight: normal;
+  text-align: center;
+  margin: 2% 0;
+}
+#card_list .card_display .card_point {
+  font-size: 0.61rem;
+  color: #5b5b5b;
+  list-style: none;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5%;
+  line-height: 140%;
+}
+#card_list .card_display .card_point > li {
+  margin-top: 1%;
+  background: url(../images/rce_tick_icon.png) no-repeat scroll 0 5px transparent;
+  padding: 0 0 5px 20px;
+}
+#card_list .card_display .card_point .card_more_detail {
+  margin-left: 7%;
+  width: 93%;
+}
+#card_list .card_display .card_point .card_more_detail > li {
+  list-style: disc;
+}
+#card_list .card_display .card_advantage {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 2%;
+  color: #ed7e04;
+  font-size: 0.6rem;
+}
+#card_list .card_display .card_advantage p {
+  font-size: 0.8rem;
+  padding: 0 !important;
+  line-height: 140%;
+}
+#card_list .card_display .card_link {
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 9%;
+  font-size: 0.7rem;
+}
+#card_list .card_display .card_link .full_btn {
+  display: block;
+  width: 100%;
+  padding: 3% 0;
+  border-radius: 10px;
+  background: #056dae;
+  color: #fff;
+  text-align: center;
+}
+#card_list .card_display .card_link span {
+  display: inline-block;
+  margin-left: 10%;
+}
+#card_list .card_display .card_link .just_link {
+  display: block;
+  width: 100%;
+  margin-top: 5%;
+  text-align: center;
+  color: #056dae;
+}
+#lx_tc table td,
+#lc_tc table td {
+  border: solid 1px #ccc;
+  padding: 1%;
+  text-align: center;
+}
+#lx_tc ol li,
+#lc_tc ol li {
+  list-style: decimal !important;
+}
+#apply_lx a,
+#apply_lc a,
+#apply_zx a {
+  display: block;
+  font-size: 1.2em;
+  color: #fff;
+  width: 145px;
+  margin: 0 auto;
+  margin-top: 8%;
+  background: #f78b1e;
+  text-align: center;
+  padding: 0.5em 2em;
+}
+@media screen and (max-width: 959px) and (min-width: 641px) {
+  #header .maxbox img {
+    left: 3%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .visible_mb {
+    display: block;
+  }
+  .visible_pc {
+    display: none;
+  }
+  #header {
+    background: none;
+    height: auto;
+  }
+  #banner_box {
+    margin-top: 0;
+  }
+  .banner_out {
+    background: none;
+  }
+  .banner_out img {
+    float: none;
+    width: 100%;
+  }
+  .banner_out .banner_intro {
+    width: 97%;
+    height: 6.2rem;
+    padding: 5% 0 10% 3%;
+    background: url(../images/rce_revamp_04.jpg) center left repeat-x;
+  }
+  .banner_out .banner_intro h1 {
+    font-size: 1.9rem;
+  }
+  .banner_out .banner_intro p {
+    margin-top: 4%;
+    font-size: 1.2rem;
+  }
+  .target_btn {
+    color: #fff;
+    background: #056dae;
+    text-align: center;
+    width: 20%;
+    padding: 1.5% 0;
+    position: absolute;
+    top: 36%;
+    right: 7%;
+  }
+  .banner_out .banner_intro .slogan_box{
+  }
+  .banner_out .banner_intro .slogan_box div {
+    font-size: 1.1rem;
+  }
+  #middle_slogan {
+    width: 90%;
+    text-align: center;
+    margin: 5% auto;
+    font-size: 1.2rem;
+  }
+  #card_list {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -8px;
+  }
+  #card_list .card_display {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 70px;
+  }
+  #card_list .card_display:nth-child(1) {
+    margin-top: 65px;
+  }
+  #card_list .card_display .card_face {
+    width: 75%;
+    padding-top: 20px;
+  }
+  #card_list .card_display .card_name {
+    font-size: 1.4rem;
+  }
+  #card_list .card_display .card_point {
+    font-size: 1.2rem;
+  }
+  #card_list .card_display .card_point > li {
+    background-position: 0 3px;
+  }
+  #card_list .card_display .card_advantage {
+    font-size: 1.2rem;
+  }
+  #card_list .card_display .card_advantage p {
+    font-size: 1.6rem;
+    line-height: 120%;
+  }
+  #card_list .card_display .card_link {
+    margin-top: 8%;
+    font-size: 1.3rem;
+  }
+  #fancybox-content {
+    width: 90% !important;
+  }
+}
